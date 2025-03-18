@@ -3,6 +3,7 @@
     "name": "Carlos Guerrero",
     "label": "Full Stack & DevOps Engineer",
     "image": "https://github.com/guerrerocarlos.png",
+    "phone": "+34 653596182",
     "email": "hi@carlosguerrero.com",
     "url": "https://carlosguerrero.com",
     "cvUrl": "https://cv.carlosguerrero.com",
@@ -42,6 +43,7 @@
     {
       "name": "Anaconda",
       "position": "Applied AI Engineer",
+      "location": "Remote",
       "location_type": "Remote",
       "url": "https://anaconda.com",
       "endDate": "2025-12-01",
@@ -76,6 +78,7 @@
     {
       "name": "Masterworks",
       "position": "Backend Engineer → DevOps Lead",
+      "location": "Remote",
       "location_type": "Remote",
       "url": "https://masterworks.com",
       "endDate": "2023-06-01",
@@ -229,16 +232,6 @@
     },
     {
       "name": "React",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    },
-    {
-      "name": "SolidJS",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
