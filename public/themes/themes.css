@@ -6,8 +6,8 @@
     --color-text-inverted: 255, 255, 255;
     --color-fill: 245, 245, 245;
     --muted: 200, 200, 200;
-    --color: 249, 115, 22;
-    --color-button-accent: 249, 115, 22;
+    --color: 0, 110, 163;
+    --color-button-accent: 22, 112, 249;
     --color-button-accent-hover: 55, 55, 55;
     --color-button-muted: 244, 239, 238;
     [data-theme="blue"] {

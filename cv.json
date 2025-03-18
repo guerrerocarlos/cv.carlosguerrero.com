@@ -1,106 +1,110 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Full Stack Developer",
-    "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+    "name": "Carlos Guerrero",
+    "label": "Full Stack & DevOps Engineer",
+    "image": "https://github.com/guerrerocarlos.png",
+    "email": "hi@carlosguerrero.com",
+    "url": "https://carlosguerrero.com",
+    "cvUrl": "https://cv.carlosguerrero.com",
+    "summary": "Fell in love with programming at first sight—since then, it has been an endless journey of building, breaking, and learning.",
     "theme": "default",
     "location": {
       "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "postalCode": "",
+      "city": "Paraguay",
+      "region": "World"
     },
     "profiles": [
       {
+        "network": "Default",
+        "username": "carlosguerrero",
+        "url": "https://contact.carlosguerrero.com/",
+        "default": true
+      },
+      {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
+        "username": "carlosguerrero-com",
+        "url": "https://www.linkedin.com/in/carlosguerrero-com/"
       },
       {
         "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "guerrerocarlos",
+        "url": "https://x.com/guerrerocarlos"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "guerrerocarlos",
+        "url": "https://github.com/guerrerocarlos"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
-      "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
-      "highlights": [
-        "Improved website performance by optimizing code"
-      ],
-      "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
-      ],
-      "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
-      ],
-      "skills": [
-        "React",
-        "Tailwind",
-        "GitHub"
-      ]
-    },
-    {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
-      "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
-      ],
-      "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
-      ],
-      "skills": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git"
-      ]
-    },
-    {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
+      "name": "Anaconda",
+      "position": "Applied AI Engineer",
       "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "url": "https://anaconda.com",
+      "endDate": "2025-12-01",
+      "startDate": "2024-03-01",
+      "summary": "Architected and implemented a comprehensive serverless infrastructure for deploying and managing AI agents and LLMs on AWS Lambda, creating an efficient, scalable solution for AI workloads with OpenAI-compatible interfaces.",
       "highlights": [
-        "Completed several client projects successfully"
+        "Designed a serverless architecture that reduced operational costs and improved improving scalability for AI agent deployment",
+        "Implemented CI/CD pipelines that decreased deployment time to minutes",
+        "Developed a RESTful API layer for seamless agent management and orchestration",
+        "Engineered a queue-based communication system enabling complex multi-agent workflows"
+      ],
+      "responsibilities": [
+        "Engineered a robust serverless infrastructure optimized for AI agent and LLM execution within AWS Lambda constraints",
+        "Created an automated deployment workflow enabling rapid prototyping and iteration of AI agents without infrastructure management overhead",
+        "Implemented a message queue system for asynchronous and fault-tolerant inter-agent communication using OpenAI-compatible interfaces"
+      ],
+      "achievements": [
+        "Successfully deployed a Slack-integrated Agent that connected to Jupyter and was able to help Scientists improve their notebooks and even execute Python code from Slack",
+        "Created a standardized OpenAI-compatible communication protocol enabling plug-and-play integration of new agent components",
+        "Implemented traceability and monitoring for all components, enabling real-time performance analysis and debugging using AWS X-Ray and CloudWatch"
       ],
       "skills": [
-        "HTML",
-        "CSS"
+        "AWS Lambda",
+        "Serverless Architecture",
+        "LLM Optimization",
+        "Message Queues",
+        "OpenAI",
+        "CI/CD",
+        "Infrastructure as Code"
+      ]
+    },
+    {
+      "name": "Masterworks",
+      "position": "Backend Engineer → DevOps Lead",
+      "location_type": "Remote",
+      "url": "https://masterworks.com",
+      "endDate": "2023-06-01",
+      "startDate": "2018-06-01",
+      "summary": "Initially hired as a Backend Engineer, rapidly transitioned to DevOps leadership role to transform the company's infrastructure. Led comprehensive migrations from third-party solutions to self-managed AWS infrastructure, dramatically improving developer experience and deployment reliability.",
+      "highlights": [
+        "Migrated frontend hosting from Netlify to self-managed AWS CloudFront infrastructure, enabling advanced A/B testing capabilities and granular performance optimizations",
+        "Transformed backend deployment from Jenkins/Kubernetes to GitHub Actions/AWS Fargate, reducing infrastructure costs by 35% and deployment failures by 80%",
+        "Implemented per-branch environment provisioning that eliminated cross-team merge conflicts and accelerated feature delivery by 60%"
+      ],
+      "responsibilities": [
+        "Redesigned the entire CI/CD pipeline to support automated per-branch environment deployment with minimal configuration",
+        "Architected and implemented a self-managed AWS infrastructure leveraging CloudFront, Fargate, RDS, and other managed services",
+        "Created and maintained Infrastructure as Code templates using Terraform and AWS CDK"
+      ],
+      "achievements": [
+        "Reduced time from code commit to production-ready deployments from days to hours",
+        "Eliminated most of deployment-related merge conflicts through isolated environment architecture",
+        "Implemented sophisticated A/B testing infrastructure at CDN level, allowing for data-driven UX decisions",
+        "Obtained AWS Certified Cloud Practitioner certification"
+      ],
+      "skills": [
+        "AWS (CloudFront, Fargate, RDS)",
+        "GitHub Actions",
+        "CI/CD",
+        "Infrastructure as Code",
+        "Docker",
+        "Python",
+        "A/B Testing"
       ]
     }
   ],
@@ -119,88 +123,51 @@
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
+      "institution": "Universidad del Táchira",
+      "url": "https://unet.edu.ve",
+      "area": "Electronic Engineering",
+      "studyType": "Degree",
+      "startDate": "2002-01-01",
+      "endDate": "2007-01-01",
       "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
+        "C++",
+        "Process Automation",
+        "Digital Signal Processing",
+        "Control Systems",
+        "Microcontrollers",
+        "Electronics"
       ]
     },
     {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
+      "institution": "ETI",
+      "area": "Industrial Chemistry",
+      "studyType": "Degree",
+      "startDate": "2002-01-01",
+      "endDate": "2019-01-01",
       "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
-    },
-    {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
+        "Chemical Engineering",
+        "Organic Chemistry",
+        "Inorganic Chemistry",
+        "Analytical Chemistry",
+        "Physical Chemistry",
+        "Biochemistry"
       ]
     }
   ],
   "certificates": [
     {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
+      "name": "AWS Certified Cloud Practitioner",
+      "date": "2020-03-01",
+      "issuer": "Amazon Web Services Training and Certification",
+      "url": "https://www.credly.com/badges/b3a9edad-3cc3-452e-8a21-4271992e17c4"
+    },
+    {
+      "name": "Cisco Certified Network Associate (CCNA)",
+      "date": "200-03-01",
+      "issuer": "CISCO - Networking Academy"
     }
   ],
   "skills": [
-    {
-      "name": "Figma",
-      "level": "Expert",
-      "keywords": [
-        "Design",
-        "UI"
-      ]
-    },
-    {
-      "name": "Gitlab",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "HTML",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
-    },
     {
       "name": "JavaScript",
       "level": "Intermediate",
@@ -209,16 +176,6 @@
         "Frontend",
         "Backend",
         "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
       ]
     },
     {
@@ -271,18 +228,54 @@
       ]
     },
     {
-      "name": "Next.js",
-      "level": "Beginner",
+      "name": "React",
+      "level": "Intermediate",
       "keywords": [
         "Web Development",
         "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
+        "JavaScript Library",
+        "UI"
       ]
     },
     {
-      "name": "React",
+      "name": "SolidJS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "Swift",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Python",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -295,11 +288,11 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Fluent"
     },
     {
       "language": "Spanish",
-      "fluency": "Intermediate"
+      "fluency": "Native speaker"
     }
   ],
   "interests": [
@@ -311,54 +304,46 @@
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Jane Smith",
-      "reference": "Reference…"
-    }
-  ],
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
+      "name": "KeePassWeb",
       "isActive": true,
-      "description": "A web application that provides weather information for any location.",
+      "description": "Simple tool to encrypt important secrets/passwords without relying on any third party. Allows securing the data using.",
       "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
+        "Built with VanillaJS, no Backend required",
+        "Trustless encryption"
       ],
-      "url": "https://weatherapp.com"
+      "url": "https://keepassweb.com"
     },
     {
-      "name": "Task Manager",
+      "name": "Secrets secure-channel",
       "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
+      "description": "Cryptographically secure channel for exchanging secrets between two parties.",
       "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
+        "Built with native WebCrypto API",
+        "End-to-end encryption"
       ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
+      "url": "https://guerrerocarlos.github.io/secure-channel/"
     },
     {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
+      "name": "CacheP2P",
+      "isActive": true,
+      "description": "More users = more capacity. Leverage user’s browsers to improve website performance.",
       "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
+        "Built with WebRTC",
+        "P2P CDN"
       ],
-      "url": "https://ecommerce.com"
+      "github": "https://github.com/guerrerocarlos/CacheP2P"
+    },
+    {
+      "name": "ProxyDNS",
+      "isActive": false,
+      "description": "Smart DNS service designed to bypass geographic restrictions for internet content",
+      "highlights": [
+        "Custom build proxy",
+        "bind-based DNS server"
+      ],
+      "url": "https://proxydns.co"
     }
   ]
 }
