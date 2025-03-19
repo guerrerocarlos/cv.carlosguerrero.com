@@ -287,6 +287,13 @@
         "JavaScript Library",
         "UI"
       ]
+    },
+    {
+      "name": "GoLang",
+      "level": "Beginner",
+      "keywords": [
+        "Backend"
+      ]
     }
   ],
   "languages": [
