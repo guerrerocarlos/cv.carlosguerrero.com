@@ -3,7 +3,7 @@
     "name": "Carlos Guerrero",
     "label": "Full Stack & DevOps Engineer",
     "image": "https://github.com/guerrerocarlos.png",
-    "phone": "+34 653596182",
+    "phone": "+34653596182",
     "email": "hi@carlosguerrero.com",
     "url": "https://carlosguerrero.com",
     "cvUrl": "https://cv.carlosguerrero.com",
@@ -36,6 +36,16 @@
         "network": "GitHub",
         "username": "guerrerocarlos",
         "url": "https://github.com/guerrerocarlos"
+      },
+      {
+        "network": "Telegram",
+        "username": "guerrerocarlos",
+        "url": "https://t.me/guerrerocarlos"
+      },
+      {
+        "network": "WhatsApp",
+        "username": "Carlos Guerrero",
+        "url": "https://wa.me/qr/PVZTFJDU3YOPE1"
       }
     ]
   },
@@ -66,6 +76,8 @@
         "Implemented traceability and monitoring for all components, enabling real-time performance analysis and debugging using AWS X-Ray and CloudWatch"
       ],
       "skills": [
+        "Python",
+        "GoLang",
         "AWS Lambda",
         "Serverless Architecture",
         "LLM Optimization",
@@ -106,7 +118,6 @@
         "CI/CD",
         "Infrastructure as Code",
         "Docker",
-        "Python",
         "A/B Testing"
       ]
     }
