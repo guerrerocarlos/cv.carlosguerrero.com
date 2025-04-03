@@ -82,6 +82,46 @@
       ]
     },
     {
+      "name": "Family Operations",
+      "position": "Chief Parenting Officer",
+      "location": "Home Base",
+      "location_type": "On-site",
+      "url": "",
+      "endDate": "Present",
+      "startDate": "2020-01-01",
+      "summary": "Leading an agile, fast-growing team of junior developers through daily challenges and milestones. Responsible for nurturing talent, crisis management, and maintaining high standards of emotional intelligence while delivering continuous support and guidance.",
+      "highlights": [
+        "Successfully deployed Project 'Supernova' (Olivia) and Project 'Tornado' (Matías) into production environments",
+        "Implemented effective sleep optimization protocols reducing night interruptions by 60%",
+        "Mastered parallel task management while maintaining patience levels above industry standards",
+        "Developed innovative meal delivery systems adaptable to constantly changing user preferences"
+      ],
+      "responsibilities": [
+        "24/7 on-call support with rapid response requirements for critical incidents",
+        "Strategic planning for educational milestones and developmental objectives",
+        "Budget management for growing resource requirements across multiple domains",
+        "Conflict resolution and negotiation with stakeholders displaying varying levels of emotional maturity"
+      ],
+      "achievements": [
+        "Maintained sanity despite sleep deprivation and unpredictable work conditions",
+        "Established efficient household operation protocols despite frequent requirement changes",
+        "Developed ability to translate unintelligible requirements into actionable tasks",
+        "Created scalable systems adaptable to rapidly changing user needs and growth patterns"
+      ],
+      "skills": [
+        "Infinite Patience",
+        "Story Narration",
+        "Crisis Management",
+        "Multi-tasking",
+        "Sleep Deprivation Resistance",
+        "Negotiation",
+        "First Aid",
+        "Resource Optimization",
+        "Lego Construction",
+        "Bedtime Diplomacy"
+      ]
+    },
+    {
       "name": "Masterworks",
       "position": "Backend Engineer → DevOps Lead",
       "location": "Remote",
