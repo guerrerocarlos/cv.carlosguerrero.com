@@ -127,8 +127,8 @@
       "location": "Remote",
       "location_type": "Remote",
       "url": "https://masterworks.com",
-      "endDate": "2023-06-01",
-      "startDate": "2018-06-01",
+      "endDate": "2020-01-01",
+      "startDate": "2018-01-01",
       "summary": "Initially hired as a Backend Engineer, rapidly transitioned to DevOps leadership role to transform the company's infrastructure. Led comprehensive migrations from third-party solutions to self-managed AWS infrastructure, dramatically improving developer experience and deployment reliability.",
       "highlights": [
         "Migrated frontend hosting from Netlify to self-managed AWS CloudFront infrastructure, enabling advanced A/B testing capabilities and granular performance optimizations",
