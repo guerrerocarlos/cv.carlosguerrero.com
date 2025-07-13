@@ -1,0 +1,110 @@
+---
+---
+<html>
+  <head>
+    <title>Print Business Cards</title>
+    <style>
+      .card-preview { border: 1px solid #ccc; margin: 1rem; display: inline-block; }
+      .controls { margin: 2rem 0; }
+      button { font-size: 1.2rem; padding: 0.5rem 1.5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Print-ready Business Cards</h1>
+    <div class="controls">
+      <button id="download-pdf">Download PDF</button>
+    </div>
+    <div>
+      <h2>Front Preview</h2>
+      <div class="card-preview"><img id="front-img" width="350" /></div>
+      <h2>Back Preview</h2>
+      <div class="card-preview"><img id="back-img" width="350" /></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+      async function fetchSVG(url) {
+        const res = await fetch(url);
+        return await res.text();
+      }
+      async function svgToPngDataUrl(svg, width, height) {
+        return new Promise((resolve) => {
+          const img = new window.Image();
+          const svgBlob = new Blob([svg], { type: 'image/svg+xml' });
+          const url = URL.createObjectURL(svgBlob);
+          img.onload = function() {
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+            URL.revokeObjectURL(url);
+            resolve(canvas.toDataURL('image/png'));
+          };
+          img.src = url;
+        });
+      }
+      async function main() {
+        // Card and page sizes in points (1in = 72pt)
+        const cardW = 252; // 3.5in
+        const cardH = 144; // 2in
+        const pageW = 612; // 8.5in (Letter, portrait)
+        const pageH = 792; // 11in
+        const marginX = (pageW - 2 * cardW) / 3; // 2 columns, 3 spaces
+        const marginY = (pageH - 5 * cardH) / 6; // 5 rows, 6 spaces
+        const cols = 2, rows = 5;
+        // Fetch SVGs and show previews
+        const [frontSVG, backSVG] = await Promise.all([
+          fetchSVG('/api/card-front.svg'),
+          fetchSVG('/api/card-back.svg')
+        ]);
+        document.getElementById('front-img').src = 'data:image/svg+xml;utf8,' + encodeURIComponent(frontSVG);
+        document.getElementById('back-img').src = 'data:image/svg+xml;utf8,' + encodeURIComponent(backSVG);
+        // Prepare PNGs for PDF
+        const pngW = 1050, pngH = 600; // match SVG endpoints
+        const frontPng = await svgToPngDataUrl(frontSVG, pngW, pngH);
+        const backPng = await svgToPngDataUrl(backSVG, pngW, pngH);
+        // PDF logic
+        document.getElementById('download-pdf').onclick = () => {
+          const { jsPDF } = window.jspdf;
+          const doc = new jsPDF({ unit: 'pt', format: 'letter', orientation: 'portrait' });
+          // Helper to draw cut lines
+          function drawCutLines(doc) {
+            doc.setLineWidth(0.5);
+            doc.setDrawColor(180);
+            // Vertical lines
+            for (let c = 1; c < cols; c++) {
+              const x = marginX + c * (cardW + marginX);
+              doc.line(x, marginY, x, pageH - marginY);
+            }
+            // Horizontal lines
+            for (let r = 1; r < rows; r++) {
+              const y = marginY + r * (cardH + marginY);
+              doc.line(marginX, y, pageW - marginX, y);
+            }
+          }
+          // Front page
+          for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+              const x = marginX + col * (cardW + marginX);
+              const y = marginY + row * (cardH + marginY);
+              doc.addImage(frontPng, 'PNG', x, y, cardW, cardH);
+            }
+          }
+          drawCutLines(doc);
+          doc.addPage();
+          // Back page (same grid)
+          for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+              const x = marginX + col * (cardW + marginX);
+              const y = marginY + row * (cardH + marginY);
+              doc.addImage(backPng, 'PNG', x, y, cardW, cardH);
+            }
+          }
+          drawCutLines(doc);
+          doc.save('business-cards.pdf');
+        };
+      }
+      main();
+    </script>
+  </body>
+</html> 
