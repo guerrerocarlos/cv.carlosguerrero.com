@@ -31,7 +31,7 @@ export const GET: APIRoute = async () => {
   const defaults: Required<CardOptions> = {
     name: cvData?.basics?.name || 'Carlos Guerrero',
     title: cvData?.basics?.label || 'Full Stack & DevOps Engineer',
-    tagline: 'Building modern web applications and infrastructure',
+    tagline: 'Building modern solutions and infrastructure',
     widthMm: 88.9,
     heightMm: 50.8,
     frontGradientStart: '#221433',
@@ -56,12 +56,13 @@ export const GET: APIRoute = async () => {
       light: '#00000000' // Transparent background
     }
   });
+  const qrMargin = 80;
   const svg = `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns='http://www.w3.org/2000/svg' width='${defaults.widthMm}mm' height='${defaults.heightMm}mm' viewBox='0 0 ${w} ${h}'>
 <rect width='${w}' height='${h}' fill='${defaults.frontGradientStart}'/>
 <text x='${leftPad}' y='${startY}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${nameFontSize}' fill='#fff'>${first}</text>
 <text x='${leftPad}' y='${startY + nameFontSize*1.05}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${nameFontSize}' fill='#fff'>${last}</text>
 <text x='${leftPad}' y='${startY + nameFontSize*2.15}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${titleFontSize}' fill='#fff'>${escapeXML(defaults.title)}</text>
-<text x='${leftPad}' y='${startY + nameFontSize*2.85}' font-family='Montserrat,Helvetica,sans-serif' font-weight='400' font-size='${tagFontSize}' fill='#9B9BA5'>${escapeXML(defaults.tagline)}</text>\n<image href='${qrDataUrl}' x='${w-qrSize-40}' y='40' width='${qrSize}' height='${qrSize}'/>\n</svg>`;
+<text x='${leftPad}' y='${startY + nameFontSize*2.85}' font-family='Montserrat,Helvetica,sans-serif' font-weight='400' font-size='${tagFontSize}' fill='#9B9BA5'>${escapeXML(defaults.tagline)}</text>\n<image href='${qrDataUrl}' x='${w-qrSize-qrMargin}' y='${qrMargin}' width='${qrSize}' height='${qrSize}'/>\n</svg>`;
   return new Response(svg, {
     headers: {
       'Content-Type': 'image/svg+xml',

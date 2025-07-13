@@ -34,7 +34,7 @@ export const GET: APIRoute = async () => {
   const defaults: Required<CardOptions> = {
     name: cvData?.basics?.name || 'Carlos Guerrero',
     title: cvData?.basics?.label || 'Full Stack & DevOps Engineer',
-    tagline: 'Building modern web applications and infrastructure',
+    tagline: 'Building modern solutions and infrastructure',
     email: cvData?.basics?.email || 'hi@carlosguerrero.com',
     phone: cvData?.basics?.phone || '+34 653 596 182',
     linkedin: (cvData?.basics?.profiles?.find((p: any) => p.network === 'LinkedIn')?.url) || 'linkedin.com/in/carlosguerrero',
@@ -52,7 +52,7 @@ export const GET: APIRoute = async () => {
   const letterHeightMm = 279.4;
   const cardWmm = defaults.widthMm;
   const cardHmm = defaults.heightMm;
-  const marginMm = 5;
+  const marginMm = 0; // No margin between cards
   const cols = Math.floor((letterWidthMm + marginMm) / (cardWmm + marginMm));
   const rows = Math.floor((letterHeightMm + marginMm) / (cardHmm + marginMm));
   const offsetXmm = (letterWidthMm - (cols * cardWmm + (cols - 1) * marginMm)) / 2;

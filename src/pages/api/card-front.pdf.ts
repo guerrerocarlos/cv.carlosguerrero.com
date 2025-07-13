@@ -35,7 +35,7 @@ export const GET: APIRoute = async () => {
   const defaults: Required<CardOptions> = {
     name: cvData?.basics?.name || 'Carlos Guerrero',
     title: cvData?.basics?.label || 'Full Stack & DevOps Engineer',
-    tagline: 'Building modern web applications and infrastructure',
+    tagline: 'Building modern solutions and infrastructure',
     email: cvData?.basics?.email || 'hi@carlosguerrero.com',
     phone: cvData?.basics?.phone || '+34 653 596 182',
     linkedin: (cvData?.basics?.profiles?.find((p: any) => p.network === 'LinkedIn')?.url) || 'linkedin.com/in/carlosguerrero',
