@@ -170,7 +170,7 @@ export const GET: APIRoute = async () => {
       const padX = cardW * 0.09;
       const padY = cardH * 0.28;
       const gap = cardH * 0.16;
-      page2.drawText(`✉️ ${defaults.email}`, {
+      page2.drawText(`${defaults.email}`, {
         x: x + padX,
         y: y + cardH - padY,
         size: fsIcon,
