@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import QRCode from 'qrcode';
 
 interface CardOptions {
   name?: string;
@@ -44,7 +45,23 @@ export const GET: APIRoute = async () => {
   const [first, ...rest] = escapeXML(defaults.name).split(' ');
   const last = rest.join(' ');
   const startY = 210;
-  const svg = `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns='http://www.w3.org/2000/svg' width='${defaults.widthMm}mm' height='${defaults.heightMm}mm' viewBox='0 0 ${w} ${h}'><rect width='${w}' height='${h}' fill='${defaults.frontGradientStart}'/>\n<text x='${leftPad}' y='${startY}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${nameFontSize}' fill='#fff'>${first}</text>\n<text x='${leftPad}' y='${startY + nameFontSize*1.05}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${nameFontSize}' fill='#fff'>${last}</text>\n<text x='${leftPad}' y='${startY + nameFontSize*2.15}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${titleFontSize}' fill='#fff'>${escapeXML(defaults.title)}</text>\n<text x='${leftPad}' y='${startY + nameFontSize*2.85}' font-family='Montserrat,Helvetica,sans-serif' font-weight='400' font-size='${tagFontSize}' fill='#9B9BA5'>${escapeXML(defaults.tagline)}</text>\n</svg>`;
+  const qrUrl = 'https://cv.carlosguerrero.com/';
+  const qrSize = 300;
+  const qrDataUrl = await QRCode.toDataURL(qrUrl, {
+    margin: 0,
+    width: qrSize,
+    errorCorrectionLevel: 'H',
+    color: {
+      dark: '#FFFFFF', // White modules
+      light: '#00000000' // Transparent background
+    }
+  });
+  const svg = `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns='http://www.w3.org/2000/svg' width='${defaults.widthMm}mm' height='${defaults.heightMm}mm' viewBox='0 0 ${w} ${h}'>
+<rect width='${w}' height='${h}' fill='${defaults.frontGradientStart}'/>
+<text x='${leftPad}' y='${startY}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${nameFontSize}' fill='#fff'>${first}</text>
+<text x='${leftPad}' y='${startY + nameFontSize*1.05}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${nameFontSize}' fill='#fff'>${last}</text>
+<text x='${leftPad}' y='${startY + nameFontSize*2.15}' font-family='Montserrat,Helvetica,sans-serif' font-weight='700' font-size='${titleFontSize}' fill='#fff'>${escapeXML(defaults.title)}</text>
+<text x='${leftPad}' y='${startY + nameFontSize*2.85}' font-family='Montserrat,Helvetica,sans-serif' font-weight='400' font-size='${tagFontSize}' fill='#9B9BA5'>${escapeXML(defaults.tagline)}</text>\n<image href='${qrDataUrl}' x='${w-qrSize-40}' y='40' width='${qrSize}' height='${qrSize}'/>\n</svg>`;
   return new Response(svg, {
     headers: {
       'Content-Type': 'image/svg+xml',
