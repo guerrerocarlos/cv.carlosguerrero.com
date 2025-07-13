@@ -73,7 +73,6 @@ export const GET: APIRoute = async () => {
 
   // Colors
   const gradStart = hexToRgb(defaults.frontGradientStart);
-  const gradEnd = hexToRgb(defaults.frontGradientEnd);
 
   // --- FRONT PAGE ---
   const page = pdfDoc.addPage([pageWidth, pageHeight]);

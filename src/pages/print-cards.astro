@@ -22,11 +22,11 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
-      async function fetchSVG(url) {
+      async function fetchSVG(url: string): Promise<string> {
         const res = await fetch(url);
         return await res.text();
       }
-      async function svgToPngDataUrl(svg, width, height) {
+      async function svgToPngDataUrl(svg: string, width: number, height: number): Promise<string> {
         return new Promise((resolve) => {
           const img = new window.Image();
           const svgBlob = new Blob([svg], { type: 'image/svg+xml' });
@@ -36,7 +36,9 @@
             canvas.width = width;
             canvas.height = height;
             const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, width, height);
+            if (ctx) {
+              ctx.drawImage(img, 0, 0, width, height);
+            }
             URL.revokeObjectURL(url);
             resolve(canvas.toDataURL('image/png'));
           };
@@ -57,52 +59,61 @@
           fetchSVG('/api/card-front.svg'),
           fetchSVG('/api/card-back.svg')
         ]);
-        document.getElementById('front-img').src = 'data:image/svg+xml;utf8,' + encodeURIComponent(frontSVG);
-        document.getElementById('back-img').src = 'data:image/svg+xml;utf8,' + encodeURIComponent(backSVG);
+        const frontImg = document.getElementById('front-img') as HTMLImageElement | null;
+        if (frontImg) {
+          frontImg.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(frontSVG);
+        }
+        const backImg = document.getElementById('back-img') as HTMLImageElement | null;
+        if (backImg) {
+          backImg.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(backSVG);
+        }
         // Prepare PNGs for PDF
         const pngW = 1050, pngH = 600; // match SVG endpoints
         const frontPng = await svgToPngDataUrl(frontSVG, pngW, pngH);
         const backPng = await svgToPngDataUrl(backSVG, pngW, pngH);
         // PDF logic
-        document.getElementById('download-pdf').onclick = () => {
-          const { jsPDF } = window.jspdf;
-          const doc = new jsPDF({ unit: 'pt', format: 'letter', orientation: 'portrait' });
-          // Helper to draw cut lines
-          function drawCutLines(doc) {
-            doc.setLineWidth(0.5);
-            doc.setDrawColor(180);
-            // Vertical lines
-            for (let c = 1; c < cols; c++) {
-              const x = marginX + c * (cardW + marginX);
-              doc.line(x, marginY, x, pageH - marginY);
+        const downloadBtn = document.getElementById('download-pdf');
+        if (downloadBtn) {
+          downloadBtn.onclick = () => {
+            const { jsPDF } = (window as any).jspdf;
+            const doc = new jsPDF({ unit: 'pt', format: 'letter', orientation: 'portrait' });
+            // Helper to draw cut lines
+            function drawCutLines(doc: any) {
+              doc.setLineWidth(0.5);
+              doc.setDrawColor(180);
+              // Vertical lines
+              for (let c = 1; c < cols; c++) {
+                const x = marginX + c * (cardW + marginX);
+                doc.line(x, marginY, x, pageH - marginY);
+              }
+              // Horizontal lines
+              for (let r = 1; r < rows; r++) {
+                const y = marginY + r * (cardH + marginY);
+                doc.line(marginX, y, pageW - marginX, y);
+              }
             }
-            // Horizontal lines
-            for (let r = 1; r < rows; r++) {
-              const y = marginY + r * (cardH + marginY);
-              doc.line(marginX, y, pageW - marginX, y);
+            // Front page
+            for (let row = 0; row < rows; row++) {
+              for (let col = 0; col < cols; col++) {
+                const x = marginX + col * (cardW + marginX);
+                const y = marginY + row * (cardH + marginY);
+                doc.addImage(frontPng, 'PNG', x, y, cardW, cardH);
+              }
             }
-          }
-          // Front page
-          for (let row = 0; row < rows; row++) {
-            for (let col = 0; col < cols; col++) {
-              const x = marginX + col * (cardW + marginX);
-              const y = marginY + row * (cardH + marginY);
-              doc.addImage(frontPng, 'PNG', x, y, cardW, cardH);
+            drawCutLines(doc);
+            doc.addPage();
+            // Back page (same grid)
+            for (let row = 0; row < rows; row++) {
+              for (let col = 0; col < cols; col++) {
+                const x = marginX + col * (cardW + marginX);
+                const y = marginY + row * (cardH + marginY);
+                doc.addImage(backPng, 'PNG', x, y, cardW, cardH);
+              }
             }
-          }
-          drawCutLines(doc);
-          doc.addPage();
-          // Back page (same grid)
-          for (let row = 0; row < rows; row++) {
-            for (let col = 0; col < cols; col++) {
-              const x = marginX + col * (cardW + marginX);
-              const y = marginY + row * (cardH + marginY);
-              doc.addImage(backPng, 'PNG', x, y, cardW, cardH);
-            }
-          }
-          drawCutLines(doc);
-          doc.save('business-cards.pdf');
-        };
+            drawCutLines(doc);
+            doc.save('business-cards.pdf');
+          };
+        }
       }
       main();
     </script>
