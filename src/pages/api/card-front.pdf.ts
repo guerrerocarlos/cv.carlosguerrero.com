@@ -177,21 +177,21 @@ export const GET: APIRoute = async () => {
         font: fontRegular,
         color: rgb(0.13, 0.13, 0.13),
       });
-      page2.drawText(`📞 ${defaults.phone}`, {
+      page2.drawText(`Tel: ${defaults.phone}`, {
         x: x + padX,
         y: y + cardH - padY - gap,
         size: fsIcon,
         font: fontRegular,
         color: rgb(0.13, 0.13, 0.13),
       });
-      page2.drawText(`🔗 ${defaults.linkedin}`, {
+      page2.drawText(`LinkedIn: ${defaults.linkedin}`, {
         x: x + padX,
         y: y + cardH - padY - 2 * gap,
         size: fsIcon,
         font: fontRegular,
         color: rgb(0.13, 0.13, 0.13),
       });
-      page2.drawText(`🌐 ${defaults.website}`, {
+      page2.drawText(`Web: ${defaults.website}`, {
         x: x + padX,
         y: y + cardH - padY - 3 * gap,
         size: fsIcon,
