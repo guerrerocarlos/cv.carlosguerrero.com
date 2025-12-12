@@ -8,37 +8,68 @@ import { projects } from "@cv";
 ---
 
 <Section className={Astro.props.className} title="Personal Projects">
-	<div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
+	<div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col print:gap-2">
 		{
 			projects.map(({ url, description, highlights, name, isActive, github }) => {
+				const canShowLink = Boolean(isActive && url);
+
 				return (
-					<div role="contentinfo" class="grid-span-1 ring-skin-muted relative flex flex-col rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1">
-						<div class="flex items-center justify-between space-x-[10px]">
-							<div class="flex items-center gap-2">
-								<GitHub />
+					<div role="contentinfo" class="col-span-1 ring-skin-muted relative flex flex-col rounded-md bg-skin-button-muted/50 p-5 shadow-sm ring-1 print:gap-1 print:border-b print:border-skin-muted/40 print:bg-transparent print:p-0 print:pb-3 print:shadow-none print:ring-0 print:last:border-0">
+						<div class="flex items-center justify-between space-x-[10px] print:w-full print:flex-col print:items-start print:gap-1 print:space-x-0">
+							<div class="flex items-center gap-2 print:items-start">
+								<span class="no-print">
+									<GitHub />
+								</span>
 								<div class="flex items-center gap-[6px]">
-									{isActive ? (
-										<a class="hover:text-skin-hue group flex items-center gap-[6px] text-lg decoration-dotted underline-offset-[5px] hover:underline" href={url} title={`Ver ${name}`} target="_blank">
+									{canShowLink ? (
+										<a class="hover:text-skin-hue group flex items-center gap-[6px] text-lg decoration-dotted underline-offset-[5px] hover:underline print:text-base print:font-semibold print:underline" href={url} title={`Ver ${name}`} target="_blank">
 											{name}
-											<span class="text-skin-hue transition ease-linear group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
+											<span class="text-skin-hue transition ease-linear group-hover:-translate-y-0.5 group-hover:translate-x-0.5 print:hidden">
 												<Arrow />
 											</span>
 										</a>
 									) : (
-										<span>{name}</span>
+										<span class="text-lg print:text-base print:font-semibold">{name}</span>
 									)}
 								</div>
 							</div>
 
 							{github && (
-								<a href={github} title="View slug repository on GitHub" target="_blank" rel="noopener" class="opacity-75 transition-opacity duration-100 hover:opacity-100">
+								<a href={github} title="View slug repository on GitHub" target="_blank" rel="noopener" class="no-print opacity-75 transition-opacity duration-100 hover:opacity-100">
 									<Git />
 								</a>
 							)}
+
+							{isActive !== undefined && (
+								<span class="hidden print:inline-flex items-center rounded-full bg-skin-button-muted px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-skin-muted">
+									{isActive ? "Active" : "Archived"}
+								</span>
+							)}
 						</div>
 
-						<p class="py-3 text-sm text-skin-base">{description}</p>
-						<ul class="mt-1 text-sm text-skin-muted">
+						{(url || github) && (
+							<div class="hidden print:flex flex-col gap-0.5 text-xs text-skin-muted">
+								{url && (
+									<span>
+										Live:{" "}
+										<a class="break-all text-skin-base underline" href={url} target="_blank">
+											{url}
+										</a>
+									</span>
+								)}
+								{github && (
+									<span>
+										Code:{" "}
+										<a class="break-all text-skin-base underline" href={github} target="_blank">
+											{github}
+										</a>
+									</span>
+								)}
+							</div>
+						)}
+
+						<p class="py-3 text-sm text-skin-base print:py-1 print:text-xs">{description}</p>
+						<ul class="mt-1 text-sm text-skin-muted print:mt-0 print:text-xs">
 							{highlights.map((highlight) => {
 								return <li>{highlight}</li>;
 							})}
@@ -52,9 +83,9 @@ import { projects } from "@cv";
 
 <style>
 	ul {
-		@apply ml-4 list-disc space-y-1;
+		@apply ml-4 list-disc space-y-1 print:space-y-0.5;
 		li {
-			@apply text-skin-muted;
+			@apply text-skin-muted print:leading-snug;
 		}
 	}
 
