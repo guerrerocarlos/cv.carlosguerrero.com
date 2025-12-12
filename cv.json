@@ -389,6 +389,18 @@
         "bind-based DNS server"
       ],
       "url": "https://proxydns.co"
+    },
+    {
+      "name": "TorrenTV",
+      "isActive": true,
+      "description": "Stream torrents or local media to AppleTV, Chromecast or Roku without waiting for the download to finish.",
+      "highlights": [
+        "Instant playback while the torrent downloads",
+        "Drag-and-drop magnet links or .torrent files",
+        "Casts to Chromecast, AppleTV (AirPlay) and Roku"
+      ],
+      "url": "https://torrentv.github.io/",
+      "github": "https://github.com/TorrenTV"
     }
   ]
 }
