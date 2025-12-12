@@ -3,7 +3,7 @@
     "name": "Carlos Guerrero",
     "label": "Full Stack & DevOps Engineer",
     "image": "https://github.com/guerrerocarlos.png",
-    "phone": "+34653596182",
+    "phone": "+595 985690905",
     "email": "hi@carlosguerrero.com",
     "url": "https://carlosguerrero.com",
     "cvUrl": "https://cv.carlosguerrero.com",
@@ -401,6 +401,18 @@
       ],
       "url": "https://torrentv.github.io/",
       "github": "https://github.com/TorrenTV"
+    },
+    {
+      "name": "bitcoin-miner",
+      "isActive": true,
+      "description": "Super-slow yet educative Bitcoin/BCH miner built in Node.js to demonstrate proof-of-work internals.",
+      "highlights": [
+        "Pure JavaScript implementation of double SHA-256 mining",
+        "Calculates block difficulty target from bits and verifies nonces",
+        "Includes runnable example and test suite for learning"
+      ],
+      "url": "https://github.com/guerrerocarlos/bitcoin-miner",
+      "github": "https://github.com/guerrerocarlos/bitcoin-miner"
     }
   ]
 }

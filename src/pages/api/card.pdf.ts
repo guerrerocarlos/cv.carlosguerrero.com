@@ -36,7 +36,7 @@ export const GET: APIRoute = async () => {
     title: cvData?.basics?.label || 'Full Stack & DevOps Engineer',
     tagline: 'Building modern solutions and infrastructure',
     email: cvData?.basics?.email || 'hi@carlosguerrero.com',
-    phone: cvData?.basics?.phone || '+34 653 596 182',
+    phone: cvData?.basics?.phone || '+595 985 690 905',
     linkedin: (cvData?.basics?.profiles?.find((p: any) => p.network === 'LinkedIn')?.url) || 'linkedin.com/in/carlosguerrero',
     website: cvData?.basics?.cvUrl || 'cv.carlosguerrero.com',
     qrUrl: 'https://contact.carlosguerrero.com/',
