@@ -34,7 +34,7 @@ export const GET: APIRoute = async () => {
   } catch (e) {}
   const defaults: Required<CardOptions> = {
     name: cvData?.basics?.name || 'Carlos Guerrero',
-    title: cvData?.basics?.label || 'Full Stack & DevOps Engineer',
+    title: cvData?.basics?.label || 'Full Stack, Infra & DevOps Engineer',
     tagline: 'Building modern solutions and infrastructure',
     email: cvData?.basics?.email || 'hi@carlosguerrero.com',
     phone: cvData?.basics?.phone || '+595 985 690 905',
