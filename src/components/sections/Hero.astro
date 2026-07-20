@@ -11,9 +11,7 @@ import GitHub from "@/icons/GitHub.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email } = basics;
-const KEET_QR = "/keet.png";
-
+const { name, label, image, profiles, phone, email } = basics;
 const SOCIAL_ICONS: SocialIcon = {
 	GitHub,
 	LinkedIn,
@@ -22,8 +20,6 @@ const SOCIAL_ICONS: SocialIcon = {
 	WhatsApp,
 	undefined: WorldMap,
 };
-
-const linkedInfo = profiles.find(({ network }) => network === "Default");
 
 const printInfo = [email, phone].filter(Boolean).join(" • ");
 ---
@@ -88,10 +84,6 @@ const printInfo = [email, phone].filter(Boolean).join(" • ");
 					</svg>
 				</div>
 			</footer>
-
-			<div class="keet-card">
-				<img src={KEET_QR} alt="Keet QR for Carlos Guerrero" loading="lazy" />
-			</div>
 		</div>
 		<figure class="print:hidden w-fit relative">
 			<img class="shadow-lg shadow-skin-hues" src={image} alt={name} />
@@ -127,15 +119,6 @@ const printInfo = [email, phone].filter(Boolean).join(" • ");
 	footer a, footer button {
 		@apply inline-flex size-8 items-center justify-center rounded-md p-1 transition-all duration-500 ease-linear text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted;
 	}
-
-	.keet-card {
-		@apply mt-3 flex justify-start rounded-lg border border-skin-muted/30 bg-skin-button-muted/40 p-3 print:mt-2 print:border print:border-skin-muted/50 print:bg-transparent;
-	}
-
-	.keet-card img {
-		@apply aspect-square min-h-[300px] min-w-[300px] h-[300px] w-[300px] rounded-md border border-skin-muted/40 bg-white object-contain p-1;
-	}
-
 	@media (width <= 700px) {
 		.container {
 			flex-direction: column-reverse;

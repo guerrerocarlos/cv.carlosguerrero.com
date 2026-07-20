@@ -1,5 +1,6 @@
 # build output
 dist/
+.w7s-deploy/
 
 # generated types
 .astro/

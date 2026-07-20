@@ -1,0 +1,51 @@
+name: Deploy to W7S
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+  issues: write
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.6.3
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm build
+
+      - name: Assemble W7S artifact
+        run: |
+          set -euo pipefail
+          rm -rf .w7s-deploy
+          mkdir -p .w7s-deploy
+          cp -R dist .w7s-deploy/dist
+          cp CNAME .w7s-deploy/CNAME
+          cp w7s.json .w7s-deploy/w7s.json
+
+      - uses: w7s-io/w7s-cloud@v1
+        with:
+          token: ${{ github.token }}
+          working-directory: .w7s-deploy
