@@ -31,3 +31,18 @@ cv.carlosguerrero.com
 ```
 
 in `CNAME`.
+
+After deployment, verify the W7S path while DNS is being moved:
+
+```sh
+curl -fsS -D - https://guerrerocarlos.w7s.cloud/cv.carlosguerrero.com/ -o /tmp/cv-w7s-home.html
+rg -n "Keet|keet|keet-card" /tmp/cv-w7s-home.html
+```
+
+The `rg` command should return no matches.
+
+W7S recommended TXT ownership record:
+
+```text
+_w7s.carlosguerrero.com=guerrerocarlos/cv.carlosguerrero.com
+```
