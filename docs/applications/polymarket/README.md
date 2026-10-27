@@ -38,3 +38,7 @@ Rebuilt successfully and repeated Chromium desktop/mobile, print-button, and PDF
 Carlos confirmed end-to-end creation of Omattic Inbox and Invoices Templates. Both now use Creator & Developer, alongside W7S and Democrachain, replacing CacheP2P in this application. The Inbox link is explicitly described as a simulated showcase. Project copy is condensed to preserve education, certifications, and teaching. Source evidence and alternatives remain in `project-selection.md`.
 
 SEOKeywordExplorer was also requested for this revision. Its entry describes source-supported React/TypeScript keyword research, provider integration, historical search positions, and report caching. No paid provider request or authenticated workflow was exercised. Compact project summaries preserve room for education, certifications, and instruction.
+
+## Featured InglésConLiza project
+
+Carlos requested InglésConLiza as a featured personal project built for his wife and confirmed its original Inbox, supporting services, Google Drive content management, and Cloudflare Containers/FFmpeg video processing. Repository state and the FFmpeg Containers dependency corroborate the architecture. Name the six supported channels rather than claiming integration with every social network. Campaign integration remains planned, not shipped. The expanded PDF now uses three pages to retain readable project detail and the full education/training section.

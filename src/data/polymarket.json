@@ -55,6 +55,17 @@
   ],
   "projects": [
     {
+      "name": "InglésConLiza",
+      "role": "Creator & Developer | Featured personal project",
+      "url": "https://www.inglesconliza.com",
+      "description": "Built an integrated language-learning platform for my wife, connecting the learner experience, customer communications, content operations, and media delivery through a microservices architecture.",
+      "highlights": [
+        "Created the original Inbox implementation, bringing Instagram, Messenger, WhatsApp, Telegram, email, and in-app chat into a shared customer communications workflow.",
+        "Developed supporting authentication, accounts, mailer, and email-template services, plus a content manager integrated with Google Drive.",
+        "Built video processing with Cloudflare Containers and FFmpeg. Campaign integration is planned as the next extension."
+      ]
+    },
+    {
       "name": "W7S.io",
       "role": "Creator & Developer",
       "url": "https://w7s.io",

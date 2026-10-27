@@ -53,7 +53,7 @@ _w7s.carlosguerrero.com=guerrerocarlos/cv.carlosguerrero.com
 2. Run `corepack pnpm build`, then `corepack pnpm preview --host 127.0.0.1`.
 3. Open `http://127.0.0.1:4321/polymarket/`, check desktop and narrow mobile layouts, and use Print / Save PDF.
 4. Use A4, 100% scale, CSS margins, and disable browser headers/footers. Save the reviewed output to `docs/applications/polymarket/carlos-guerrero.pdf`. Regenerate it whenever application copy changes.
-5. Confirm two pages and selectable text using `pdfinfo` and `pdftotext -layout`. Check that experience, projects, skills, contact details, and links survive printing.
+5. Confirm three pages and selectable text using `pdfinfo` and `pdftotext -layout`. Check that experience, projects, skills, contact details, and links survive printing.
 6. Commit and push a review branch. Do not merge to main until publication is authorized.
 
 The 2026-10-27 PDF was generated with Chromium 141 using Playwright `page.pdf({ preferCSSPageSize: true, printBackground: true })`.

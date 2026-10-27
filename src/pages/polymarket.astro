@@ -63,6 +63,8 @@ const github = basics.profiles.find(profile => profile.network === "GitHub");
             </article>
           ))}
         </section>
+      </div>
+      <div class="sheet second-sheet">
         <section aria-labelledby="skills">
           <h2 id="skills">Technologies & engineering</h2>
           <p>{cv.skills.join(" · ")}</p>
@@ -156,7 +158,7 @@ const github = basics.profiles.find(profile => profile.network === "GitHub");
     section { margin-top: 14px; }
     article + article { margin-top: 14px; }
     article { break-inside: avoid; }
-    .second-sheet { font-size: 9pt; line-height: 1.3; }
+    .second-sheet { font-size: 10pt; line-height: 1.4; }
     .second-sheet article + article { margin-top: 10px; }
     .second-sheet section { margin-top: 12px; }
     .second-sheet h2 { margin-bottom: 6px; }

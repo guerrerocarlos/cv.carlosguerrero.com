@@ -35,3 +35,5 @@ Current product state:
 - Expanded the application CV with both education entries and coursework, historical AWS/Cisco certifications, and user-confirmed MongoDB/Blender course instruction. Education and certificates are shared from `cv.json`; the regenerated PDF remains two A4 pages.
 
 - Recent-project selection is documented in `docs/applications/polymarket/project-selection.md`. Carlos confirmed end-to-end ownership of Inbox and Invoices Templates and approved the selection. The tailored CV now features W7S, Inbox, Invoices Templates, SEOKeywordExplorer, and Democrachain; CacheP2P remains in the general CV.
+
+- InglésConLiza is now the featured personal project, created for Carlos's wife. Its entry covers the original multichannel Inbox, supporting microservices, Google Drive content management, and Cloudflare Containers/FFmpeg video processing. Campaign integration is explicitly planned. The expanded PDF uses three A4 pages, with technologies, education, certifications, and teaching grouped on the third page.
