@@ -6,7 +6,7 @@ Current runtime shape:
 
 - Local repo: `/home/gnu/cv.carlosguerrero.com`
 - GitHub remote: `https://github.com/guerrerocarlos/cv.carlosguerrero.com`
-- Telegram manager topic: `cv.carlosguerrero.com` topic id `3496`
+- Telegram manager topic: `cv.carlosguerrero.com` topic id `33054`, Omattic chat `-1003996402615` (registered 2026-10-27 after cloning on this host). Topic `3496` is historical.
 - W7S custom domain: `cv.carlosguerrero.com`
 - App framework: Astro with Tailwind
 - Package manager: pnpm `10.6.3`
