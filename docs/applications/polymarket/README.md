@@ -46,3 +46,15 @@ Carlos requested InglésConLiza as a featured personal project built for his wif
 ## Masterworks serverless frontend services
 
 Carlos confirmed in October 2026 that he built and maintained frontend-related microservices for serverless infrastructure, including a progress bar still used in marketing emails. This continued use is user-reported; no employer systems were accessed to verify it.
+
+## React ecosystem review and Inbox correction
+
+Reviewed local manifests and source on 2026-10-27. Added libraries supported by actual application imports, without asserting expertise from dependencies alone:
+
+- Inbox (support-inglesconliza-com): `src/lib/inbox-queries.ts`, `src/router.tsx`, and routes show TanStack Query and Router usage.
+- SEOKeywordExplorer: `src/routes/__root.tsx`, `src/main.tsx`, and routes show TanStack Query/Router.
+- Invoices Templates frontend (invoices-templates-bolt-new): invoice components consume the Radix-based shadcn Button; package and build configuration include Tailwind CSS and Vite. The invoices-templates-com repository contains its backend.
+- W7S dashboard (w7s-v1/services/dashboard-app): `src/main.tsx` and pages use React Router; HomePage, OrgDetailPage, and RepoCard use Framer Motion.
+- React Hook Form, Recharts, and several other packages appear in manifests or scaffold components, but were not added as skills without stronger application-use evidence.
+
+Carlos clarified that the Inbox entry should describe the original InglesConLiza project, not the Omattic featured product. Replaced the simulated Omattic showcase link with the support console and moved planned campaign integration into Inbox. The earlier selection notes are historical and superseded by this clarification.

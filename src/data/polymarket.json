@@ -6,6 +6,13 @@
     "TypeScript",
     "JavaScript",
     "Zustand",
+    "TanStack Query",
+    "TanStack Router",
+    "React Router",
+    "Radix UI / shadcn/ui",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Vite",
     "Node.js",
     "Python",
     "REST APIs",
@@ -63,28 +70,28 @@
       "highlights": [
         "Created the original Inbox implementation, bringing Instagram, Messenger, WhatsApp, Telegram, email, and in-app chat into a shared customer communications workflow.",
         "Developed supporting authentication, accounts, mailer, and email-template services, plus a content manager integrated with Google Drive.",
-        "Built video processing with Cloudflare Containers and FFmpeg. Campaign integration is planned as the next extension."
+        "Built video processing with Cloudflare Containers and FFmpeg."
       ]
     },
     {
       "name": "W7S.io",
       "role": "Creator & Developer",
       "url": "https://w7s.io",
-      "description": "Built an open-source platform for deploying full-stack applications from GitHub. Unified hosting, backends, databases, queues, and workflows with OIDC authentication, usage controls, and infrastructure inspection for developers and AI agents.",
+      "description": "Built an open-source platform for deploying full-stack applications from GitHub. Unified hosting, backends, databases, queues, and workflows with OIDC authentication, usage controls, and infrastructure inspection for developers and AI agents. Built dashboard interfaces with React Router and Framer Motion.",
       "highlights": []
     },
     {
-      "name": "Omattic Inbox",
+      "name": "Inbox",
       "role": "Creator & Developer",
-      "url": "https://demo.omattic.com",
-      "description": "Built a React and TypeScript customer communications platform end to end, unifying channels, real-time conversations, AI-assisted workflows, and tenant isolation. Added conversation prefetching to support responsive navigation. Public link opens a simulated showcase.",
+      "url": "https://support.inglesconliza.com",
+      "description": "Created the original React and TypeScript communications platform for InglésConLiza, unifying channels, real-time conversations, and AI-assisted workflows. Used TanStack Query for conversation caching and prefetching, with TanStack Router for navigation. Campaign integration is planned.",
       "highlights": []
     },
     {
       "name": "Invoices Templates",
       "role": "Creator & Developer",
       "url": "https://www.invoices-templates.com",
-      "description": "Built a complete React and TypeScript invoice editor end to end, combining rich-text customization, local drafts, authenticated saving, and consistent print/PDF output in one document workflow.",
+      "description": "Built a complete React and TypeScript invoice editor with Radix UI/shadcn components and Tailwind CSS end to end, combining rich-text customization, local drafts, authenticated saving, and consistent print/PDF output in one document workflow.",
       "highlights": []
     },
     {

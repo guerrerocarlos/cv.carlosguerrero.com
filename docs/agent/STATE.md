@@ -39,3 +39,5 @@ Current product state:
 - InglésConLiza is now the featured personal project, created for Carlos's wife. Its entry covers the original multichannel Inbox, supporting microservices, Google Drive content management, and Cloudflare Containers/FFmpeg video processing. Campaign integration is explicitly planned. The expanded PDF uses three A4 pages, with technologies, education, certifications, and teaching grouped on the third page.
 
 - Expanded the tailored Masterworks entry with user-confirmed ownership of frontend-related serverless microservices, including a progress bar still used in marketing emails as of October 2026.
+
+- Reviewed project manifests and source imports to expand React ecosystem skills: TanStack Query/Router, React Router, Radix UI/shadcn, Tailwind CSS, Framer Motion, and Vite. Inbox now represents the original InglesConLiza communications project, linking to its support console; planned campaign integration belongs to Inbox, not an Omattic product showcase.
