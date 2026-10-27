@@ -11,7 +11,7 @@ Reviewed repository state, package manifests, selected source and recent history
 | Project | Why it belongs | Evidence and limits | Placement |
 | --- | --- | --- | --- |
 | W7S | Reusable infrastructure that enables developers to ship complete applications | Existing CV research and user-confirmed platform ownership | Keep as primary platform |
-| Omattic Inbox | Unified communications product with real-time updates, AI workflows, shared identities, and tenant separation | React/TypeScript/TanStack source; conversation prefetch and concurrent data queries; repository operating history. Public demo is simulated, not customer-usage evidence | Add a concise entry after confirming personal ownership scope |
+| Omattic Inbox | Unified communications product with real-time updates, AI workflows, shared identities, and tenant separation | React/TypeScript/TanStack source; conversation prefetch and concurrent data queries; repository operating history. Public demo is simulated, not customer-usage evidence | Selected; Carlos confirmed end-to-end ownership |
 | Invoices Templates | Complete React/TypeScript editing workflow with rich text, local drafts, authenticated persistence, and print/PDF consistency | `invoices-templates-bolt-new` declares the public domain; `src/App.tsx`, `src/lib/invoice-api.ts`, backend invoice ownership/version handlers, and print documentation. Older `invoices-templates-com` checkout has fewer capabilities | Replace CacheP2P |
 | Democrachain | Distributed-system design and smart-contract experience | User-confirmed independent working prototype; no production adoption claim | Keep a compact entry |
 | VideoEditor | Complex interactive frontend: timeline state, trim/split/crop, browser-side FFmpeg rendering, and render reuse | React/TypeScript package and detailed repository state; public entry page reachable. Source incorporates an earlier compressor UI, so distinguish original work from adaptations | Strong alternative to Inbox; interview case study |
@@ -32,7 +32,7 @@ Reviewed repository state, package manifests, selected source and recent history
 
 ## Proposed invoice wording
 
-Pending confirmation of personal ownership:
+Carlos confirmed end-to-end ownership:
 
 > Developed a React and TypeScript invoice editor combining rich-text customization, local drafts, authenticated saving, and consistent print/PDF output in a single document workflow.
 
@@ -40,6 +40,10 @@ Lead with helping users create and maintain professional invoices. Explain state
 
 ## Next editorial step
 
-Recommended compact project set: W7S, Omattic Inbox, Invoices Templates, and Democrachain. Replace CacheP2P and keep each entry short enough to retain the expanded education and teaching content. VideoEditor is the best alternative when prioritizing complex frontend interaction over platform breadth.
+Recommended compact project set: W7S, Omattic Inbox, Invoices Templates, SEOKeywordExplorer, and Democrachain. Replace CacheP2P and keep each entry short enough to retain the expanded education and teaching content. VideoEditor is the best alternative when prioritizing complex frontend interaction over platform breadth.
 
-Confirm whether Carlos created Inbox and Invoices Templates end to end or owns particular parts before writing first-person ownership claims. No CV content or live deployment was changed by this review.
+Carlos confirmed end-to-end creation of Inbox and Invoices Templates and approved the selection. Both are now included as Creator & Developer, replacing CacheP2P in the tailored CV. Inbox links to its explicitly labeled simulated showcase. The initial review itself made no live changes.
+
+## SEOKeywordExplorer addition
+
+Carlos requested inclusion in the same update. Reviewed its React/TypeScript manifest, keyword-search handlers and cache-only parameters, and product state describing DataForSEO and Google Trends aggregation, report caching, and historical search positions. The public landing page returned HTTP 200; no paid keyword request was made. Use Developer rather than extending the separate end-to-end ownership confirmation for Inbox and Invoices Templates to this project. No traffic, rankings, customer counts, or savings metrics are claimed.

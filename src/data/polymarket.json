@@ -58,28 +58,35 @@
       "name": "W7S.io",
       "role": "Creator & Developer",
       "url": "https://w7s.io",
-      "description": "Designed and built an open-source deployment platform that lets developers ship full-stack applications directly from GitHub, with infrastructure provisioned through a shared workflow.",
-      "highlights": [
-        "Unified frontend hosting, JavaScript/TypeScript backends, databases, storage, queues, and scheduled workflows so applications can share a consistent path from repository to deployment.",
-        "Built GitHub Actions deployment with repository-based OIDC authentication, removing the need for separate deployment API keys.",
-        "Integrated usage controls, operational visibility, and a read-only infrastructure API to help developers and AI agents inspect deployments and troubleshoot issues."
-      ]
+      "description": "Built an open-source platform for deploying full-stack applications from GitHub. Unified hosting, backends, databases, queues, and workflows with OIDC authentication, usage controls, and infrastructure inspection for developers and AI agents.",
+      "highlights": []
+    },
+    {
+      "name": "Omattic Inbox",
+      "role": "Creator & Developer",
+      "url": "https://demo.omattic.com",
+      "description": "Built a React and TypeScript customer communications platform end to end, unifying channels, real-time conversations, AI-assisted workflows, and tenant isolation. Added conversation prefetching to support responsive navigation. Public link opens a simulated showcase.",
+      "highlights": []
+    },
+    {
+      "name": "Invoices Templates",
+      "role": "Creator & Developer",
+      "url": "https://www.invoices-templates.com",
+      "description": "Built a complete React and TypeScript invoice editor end to end, combining rich-text customization, local drafts, authenticated saving, and consistent print/PDF output in one document workflow.",
+      "highlights": []
+    },
+    {
+      "name": "SEOKeywordExplorer",
+      "role": "Developer",
+      "url": "https://www.seokeywordexplorer.com",
+      "description": "Developed a React and TypeScript keyword research application combining DataForSEO and Google Trends data, keyword reports, and historical search positions. Cached reports avoid repeated provider requests and credit charges unless explicitly refreshed.",
+      "highlights": []
     },
     {
       "name": "Democrachain",
       "role": "Creator & Developer | Independent platform and working prototype",
       "url": "https://github.com/democrachain",
-      "description": "Designed and built a blockchain platform in JavaScript, later evolving it in TypeScript, to help organizations synchronize data across nodes and implement shared business logic through smart contracts.",
-      "highlights": [
-        "Combined synchronization, scoped permissions, and JavaScript smart contracts into a reusable foundation for distributed applications.",
-        "Designed the platform to reduce shared-state coordination and cache-management work for application teams."
-      ]
-    },
-    {
-      "name": "CacheP2P",
-      "role": "Personal project",
-      "url": "https://github.com/guerrerocarlos/CacheP2P",
-      "description": "Built a browser-based peer-to-peer CDN using WebRTC, exploring how participating browsers can contribute capacity to content delivery.",
+      "description": "Designed and built a JavaScript/TypeScript blockchain prototype combining shared data synchronization, scoped permissions, and smart contracts to reduce coordination work for distributed application teams.",
       "highlights": []
     }
   ],

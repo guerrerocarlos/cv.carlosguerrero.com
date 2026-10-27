@@ -34,4 +34,4 @@ Current product state:
 
 - Expanded the application CV with both education entries and coursework, historical AWS/Cisco certifications, and user-confirmed MongoDB/Blender course instruction. Education and certificates are shared from `cv.json`; the regenerated PDF remains two A4 pages.
 
-- Recent-project selection is documented in `docs/applications/polymarket/project-selection.md`. Recommended next revision: keep W7S/Democrachain, replace CacheP2P with Invoices Templates, and consider Inbox after ownership confirmation. The published CV is unchanged by the review.
+- Recent-project selection is documented in `docs/applications/polymarket/project-selection.md`. Carlos confirmed end-to-end ownership of Inbox and Invoices Templates and approved the selection. The tailored CV now features W7S, Inbox, Invoices Templates, SEOKeywordExplorer, and Democrachain; CacheP2P remains in the general CV.

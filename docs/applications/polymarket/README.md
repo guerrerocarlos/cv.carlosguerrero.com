@@ -32,3 +32,9 @@ The application emphasizes creating systems that enable teams and products. Reac
 Both education entries, full coursework, and AWS/Cisco certification names, issuers, years, and the available credential link are now shared from `cv.json`. Certification years are historical; current validity is not asserted. The ETI date range (2002 - 2019) is retained from the general CV and has not been independently verified. Carlos directly confirmed delivering MongoDB and Blender courses as an instructor; no teaching institutions, dates, audience counts, or syllabus details were supplied or invented.
 
 Rebuilt successfully and repeated Chromium desktop/mobile, print-button, and PDF checks. The regenerated PDF remains two A4 pages with selectable education, certification, and teaching text.
+
+## Approved project selection
+
+Carlos confirmed end-to-end creation of Omattic Inbox and Invoices Templates. Both now use Creator & Developer, alongside W7S and Democrachain, replacing CacheP2P in this application. The Inbox link is explicitly described as a simulated showcase. Project copy is condensed to preserve education, certifications, and teaching. Source evidence and alternatives remain in `project-selection.md`.
+
+SEOKeywordExplorer was also requested for this revision. Its entry describes source-supported React/TypeScript keyword research, provider integration, historical search positions, and report caching. No paid provider request or authenticated workflow was exercised. Compact project summaries preserve room for education, certifications, and instruction.

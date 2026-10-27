@@ -54,8 +54,10 @@ const github = basics.profiles.find(profile => profile.network === "GitHub");
           {cv.projects.map(project => (
             <article>
               <h3>{project.name}</h3>
-              <p class="role">{project.role}</p>
-              <a class="project-link" href={project.url}>{project.url.replace("https://", "")}</a>
+              <div class="project-meta">
+                <span class="role">{project.role}</span>
+                <a class="project-link" href={project.url}>{project.url.replace("https://", "")}</a>
+              </div>
               <p>{project.description}</p>
               {project.highlights.length > 0 && <ul>{project.highlights.map(item => <li>{item}</li>)}</ul>}
             </article>
@@ -128,6 +130,9 @@ const github = basics.profiles.find(profile => profile.network === "GitHub");
   ul { margin: 8px 0 0; padding-left: 19px; list-style: disc; }
   li { padding-left: 2px; margin: 5px 0; }
   .project-link { font-size: 12px; }
+  .project-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; }
+  .project-meta .role { margin: 0; }
+
   @media (max-width: 600px) {
     nav { padding: 0 16px; }
     main { border-left: 0; border-right: 0; }
