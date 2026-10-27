@@ -25,4 +25,4 @@ The application emphasizes creating systems that enable teams and products. Reac
 - Frozen-lockfile install and `corepack pnpm build`: passed; Astro reported zero errors, warnings, or hints. Vite reported an existing shared/dynamic `cv.json` import warning and outdated Browserslist data.
 - Chromium: desktop 1280px and mobile 390px checked; no page errors or mobile horizontal overflow; print button invokes printing.
 - PDF: two A4 pages, selectable text confirmed with `pdftotext`; experience on page one, projects and skills on page two.
-- This is local validation. The review branch has not deployed the application CV.
+- Merged to main and deployed on 2026-10-27: release `f6862e9`, Actions run `40547043950`. Public `/polymarket/` content and linked assets verified after propagation.

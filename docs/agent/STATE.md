@@ -28,4 +28,6 @@ Current product state:
 - The route has noindex metadata, visible print skills and links, and a two-page A4 layout. Noindex is not access control.
 - Reviewed PDF: `docs/applications/polymarket/carlos-guerrero.pdf`.
 - Source provenance and outstanding factual checks: `docs/applications/polymarket/README.md`.
-- Local build, browser and PDF checks passed. Publication remains pending; pushing main deploys automatically.
+- Local build, browser and PDF checks passed. Merged and deployed to production on 2026-10-27; pushing main deploys automatically.
+
+- Production release: `f6862e9b40364be3d2d057f665826b0c098eeecd`, successful GitHub Actions run `40547043950`. Verified the public `/polymarket/` content and assets after a brief propagation delay.
