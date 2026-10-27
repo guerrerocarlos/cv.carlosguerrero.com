@@ -47,3 +47,5 @@ Current product state:
 - Added a compact small-personal-projects section for Compress Video, KeePassWeb, and Secure Channel, emphasizing browser-local processing and credential encryption.
 
 - Added Older projects: CacheP2P, Torrent TV (TorrenTV), and JS Bitcoin Miner, retaining all nine existing projects.
+
+- Corrected ETI education to 1999-2002 in shared CV data, based on Carlos confirming the three years immediately before UNET (starting 2002). Applies to the general and tailored CVs.

@@ -66,3 +66,7 @@ Carlos supplied the Compress Video URL and confirmed resize, cut, crop, and join
 ## Older projects
 
 Added at Carlos's request, with descriptions checked against the supplied GitHub repositories and their READMEs: [CacheP2P](https://github.com/guerrerocarlos/CacheP2P) uses browser-based WebTorrent caching; [TorrenTV](https://github.com/guerrerocarlos/TorrenTV) is a node-webkit torrent-to-AirPlay desktop application; [JS Bitcoin Miner](https://github.com/guerrerocarlos/bitcoin-miner) is an educational JavaScript/Node.js BTC/BCH mining implementation. Avoid implying current device compatibility or practical mining performance. All nine earlier projects remain included.
+
+## ETI date correction
+
+Carlos confirmed ETI lasted the three years before UNET. With UNET starting in 2002, ETI now displays 1999-2002 in shared education data. January dates are year-only storage placeholders, not confirmed enrollment days.
