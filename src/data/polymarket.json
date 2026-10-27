@@ -1,0 +1,94 @@
+{
+  "label": "Software Engineer | Web Products, AI & Platforms",
+  "summary": "I build products and reusable systems that help teams deliver. My work spans React and TypeScript interfaces, real-time AI experiences, and deployment platforms that make infrastructure easier to use. I take ownership across product, backend, data, and infrastructure teams, adapting to what the company needs as products evolve.",
+  "skills": [
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Zustand",
+    "Node.js",
+    "Python",
+    "REST APIs",
+    "Real-time AI",
+    "GitHub Actions",
+    "AWS",
+    "Cloudflare Workers",
+    "CI/CD",
+    "Distributed systems"
+  ],
+  "work": [
+    {
+      "name": "rPotential",
+      "position": "Software Engineer, AI Products & Platform",
+      "dates": "March 2025 - August 2026",
+      "summary": "Joined early to build AI-powered decision-support products for executives, then expanded into shared infrastructure and integration across frontend, backend, and data teams.",
+      "highlights": [
+        "Built reusable frontend and backend templates adopted by three teams: frontend, backend, and data. Enabled teams to launch projects without managing the underlying deployment infrastructure.",
+        "Built most initial prototypes in React and TypeScript, using Zustand for state management. Approximately half evolved into products before further iteration.",
+        "Created real-time AI voice experiences that generated data presentations in response to user requests, addressing latency challenges to improve conversational responsiveness.",
+        "Developed Slack-integrated AI for data gathering and user interaction, plus a Twilio and OpenAI Realtime telephone prototype to collect employee information and feedback.",
+        "Connected frontend applications to evolving backends and data pipelines, collaborating on integrations requiring restricted source-data access and anonymized downstream information."
+      ]
+    },
+    {
+      "name": "Anaconda",
+      "position": "Applied AI Engineer",
+      "dates": "March 2024 - December 2025",
+      "summary": "Built serverless infrastructure for AI agents and LLM workloads, supporting deployment, orchestration, and integration through OpenAI-compatible interfaces.",
+      "highlights": [
+        "Created reusable deployment workflows and queue-based communication to support rapid agent iteration and asynchronous multi-agent workflows.",
+        "Delivered a Slack-integrated agent connected to Jupyter, helping scientists improve notebooks and execute Python from Slack.",
+        "Added tracing and monitoring with AWS X-Ray and CloudWatch to support performance analysis and debugging."
+      ]
+    },
+    {
+      "name": "Masterworks",
+      "position": "Backend Engineer to DevOps Lead",
+      "dates": "January 2018 - January 2020",
+      "summary": "Moved from backend engineering into DevOps leadership, building shared infrastructure to improve developer experience and deployment reliability.",
+      "highlights": [
+        "Created automated per-branch environments so teams could develop and validate changes independently.",
+        "Migrated frontend hosting to AWS CloudFront, supporting CDN-level A/B testing and performance tuning.",
+        "Reworked backend delivery from Jenkins and Kubernetes to GitHub Actions and AWS Fargate, with infrastructure managed through Terraform and AWS CDK."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "W7S.io",
+      "role": "Creator & Developer",
+      "url": "https://w7s.io",
+      "description": "Designed and built an open-source deployment platform that lets developers ship full-stack applications directly from GitHub, with infrastructure provisioned through a shared workflow.",
+      "highlights": [
+        "Unified frontend hosting, JavaScript/TypeScript backends, databases, storage, queues, and scheduled workflows so applications can share a consistent path from repository to deployment.",
+        "Built GitHub Actions deployment with repository-based OIDC authentication, removing the need for separate deployment API keys.",
+        "Integrated usage controls, operational visibility, and a read-only infrastructure API to help developers and AI agents inspect deployments and troubleshoot issues."
+      ]
+    },
+    {
+      "name": "Democrachain",
+      "role": "Creator & Developer | Independent platform and working prototype",
+      "url": "https://github.com/democrachain",
+      "description": "Designed and built a blockchain platform in JavaScript, later evolving it in TypeScript, to help organizations synchronize data across nodes and implement shared business logic through smart contracts.",
+      "highlights": [
+        "Combined synchronization, scoped permissions, and JavaScript smart contracts into a reusable foundation for distributed applications.",
+        "Designed the platform to reduce shared-state coordination and cache-management work for application teams."
+      ]
+    },
+    {
+      "name": "CacheP2P",
+      "role": "Personal project",
+      "url": "https://github.com/guerrerocarlos/CacheP2P",
+      "description": "Built a browser-based peer-to-peer CDN using WebRTC, exploring how participating browsers can contribute capacity to content delivery.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad del Táchira",
+      "area": "Electronic Engineering",
+      "dates": "2002 - 2007"
+    }
+  ],
+  "languages": "English: fluent | Spanish: native"
+}

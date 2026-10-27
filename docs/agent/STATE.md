@@ -19,3 +19,13 @@ Current product state:
 - GitHub Actions run `29747951644` deployed commit `39992ea121ca51df3e7a586ffe9e319cf43fdccc` to W7S successfully on 2026-07-20.
 - Immediately after W7S deployment, normal DNS for `cv.carlosguerrero.com` still served GitHub Pages. Verify W7S through `https://guerrerocarlos.w7s.cloud/cv.carlosguerrero.com/` until DNS is moved.
 - W7S recommended adding TXT `_w7s.carlosguerrero.com=guerrerocarlos/cv.carlosguerrero.com`.
+
+## 2026-10-27: Polymarket application CV
+
+- Added a separate `/polymarket/` application CV, retaining the general CV and business cards.
+- Content lives in `src/data/polymarket.json`; contact details are shared from `cv.json`.
+- Focus: systems that enable teams, with rPotential first and W7S/Democrachain as selected platforms.
+- The route has noindex metadata, visible print skills and links, and a two-page A4 layout. Noindex is not access control.
+- Reviewed PDF: `docs/applications/polymarket/carlos-guerrero.pdf`.
+- Source provenance and outstanding factual checks: `docs/applications/polymarket/README.md`.
+- Local build, browser and PDF checks passed. Publication remains pending; pushing main deploys automatically.

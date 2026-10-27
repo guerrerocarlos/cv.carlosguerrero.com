@@ -1,0 +1,137 @@
+---
+import { basics } from "../../cv.json";
+import cv from "../data/polymarket.json";
+const github = basics.profiles.find(profile => profile.network === "GitHub");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={cv.summary} />
+    <title>Carlos Guerrero | Software Engineer | Polymarket application</title>
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <nav aria-label="CV actions">
+      <a href="/">General CV</a>
+      <button id="print-cv" type="button">Print / Save PDF</button>
+    </nav>
+    <main>
+      <div class="sheet">
+        <header>
+          <p class="eyebrow">Web products · AI systems · Developer platforms</p>
+          <h1>{basics.name}</h1>
+          <p class="headline">{cv.label}</p>
+          <div class="contact">
+            <span>{basics.location.city}, Paraguay</span>
+            <a href={`mailto:${basics.email}`}>{basics.email}</a>
+            <a href={`tel:${basics.phone}`}>{basics.phone}</a>
+            {github && <a href={github.url}>{github.url.replace("https://", "")}</a>}
+          </div>
+        </header>
+        <section aria-labelledby="profile">
+          <h2 id="profile">Profile</h2>
+          <p>{cv.summary}</p>
+        </section>
+        <section aria-labelledby="experience">
+          <h2 id="experience">Experience</h2>
+          {cv.work.map(job => (
+            <article>
+              <div class="entry-heading"><h3>{job.name}</h3><span class="dates">{job.dates}</span></div>
+              <p class="role">{job.position}</p>
+              <p>{job.summary}</p>
+              <ul>{job.highlights.map(item => <li>{item}</li>)}</ul>
+            </article>
+          ))}
+        </section>
+      </div>
+      <div class="sheet second-sheet">
+        <section aria-labelledby="projects">
+          <h2 id="projects">Selected platforms & projects</h2>
+          {cv.projects.map(project => (
+            <article>
+              <h3>{project.name}</h3>
+              <p class="role">{project.role}</p>
+              <a class="project-link" href={project.url}>{project.url.replace("https://", "")}</a>
+              <p>{project.description}</p>
+              {project.highlights.length > 0 && <ul>{project.highlights.map(item => <li>{item}</li>)}</ul>}
+            </article>
+          ))}
+        </section>
+        <section aria-labelledby="skills">
+          <h2 id="skills">Technologies & engineering</h2>
+          <p>{cv.skills.join(" · ")}</p>
+        </section>
+        <section aria-labelledby="education">
+          <h2 id="education">Education & languages</h2>
+          {cv.education.map(item => <p><strong>{item.institution}</strong><br />{item.area} | {item.dates}</p>)}
+          <p>{cv.languages}</p>
+        </section>
+      </div>
+    </main>
+    <script>
+      document.querySelector("#print-cv")?.addEventListener("click", () => window.print());
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @page { size: A4; margin: 14mm 16mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #eef2f5; color: #182a38; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.5; }
+  nav { max-width: 900px; margin: 24px auto 16px; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  button { border: 1px solid #174d64; background: #174d64; color: white; padding: 9px 16px; border-radius: 6px; font: inherit; cursor: pointer; }
+  a { color: #174d64; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+  a:focus-visible, button:focus-visible { outline: 3px solid #b96915; outline-offset: 4px; }
+  main { max-width: 900px; margin: 0 auto 40px; background: white; border: 1px solid #d8e0e6; box-shadow: 0 6px 24px #182a380a; }
+  .sheet { padding: 40px 48px; }
+  .second-sheet { border-top: 1px solid #d8e0e6; }
+  header { padding-bottom: 18px; border-bottom: 2px solid #174d64; }
+  .eyebrow { color: #526977; font-size: 11px; text-transform: uppercase; letter-spacing: 1.4px; margin: 0 0 8px; }
+  h1 { margin: 0; font-size: 36px; line-height: 1.15; letter-spacing: -1px; font-weight: 700; }
+  .headline { margin: 8px 0 12px; font-size: 17px; }
+  .contact { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; }
+  section { margin-top: 22px; }
+  .second-sheet section:first-child { margin-top: 0; }
+  h2 { margin: 0 0 12px; color: #174d64; font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; }
+  h3 { margin: 0; font-size: 17px; font-weight: 700; }
+  .entry-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 18px; flex-wrap: wrap; }
+  .dates { color: #526977; font-size: 12px; }
+  .role { margin: 2px 0 7px; font-weight: 600; }
+  article + article { margin-top: 22px; }
+  p { margin: 7px 0; }
+  ul { margin: 8px 0 0; padding-left: 19px; list-style: disc; }
+  li { padding-left: 2px; margin: 5px 0; }
+  .project-link { font-size: 12px; }
+  @media (max-width: 600px) {
+    nav { padding: 0 16px; }
+    main { border-left: 0; border-right: 0; }
+    .sheet { padding: 28px 22px; }
+    h1 { font-size: 31px; }
+    .headline { font-size: 16px; }
+  }
+  @media print {
+    body { background: white; color: #111; font-size: 9.5pt; line-height: 1.35; }
+    nav { display: none; }
+    main { max-width: none; margin: 0; border: 0; box-shadow: none; }
+    .sheet { padding: 0; }
+    .second-sheet { break-before: page; border: 0; }
+    header { padding-bottom: 10px; }
+    h1 { font-size: 26pt; }
+    .headline { font-size: 12pt; margin: 5px 0 8px; }
+    .eyebrow { font-size: 8pt; }
+    .contact, .dates, .project-link { font-size: 8.5pt; }
+    h2 { font-size: 10pt; margin-bottom: 8px; }
+    h3 { font-size: 11pt; }
+    section { margin-top: 14px; }
+    article + article { margin-top: 14px; }
+    article { break-inside: avoid; }
+    p { margin: 5px 0; }
+    li { margin: 4px 0; }
+    a { color: inherit; }
+    h2, h3 { break-after: avoid; }
+  }
+</style>
