@@ -26,3 +26,9 @@ The application emphasizes creating systems that enable teams and products. Reac
 - Chromium: desktop 1280px and mobile 390px checked; no page errors or mobile horizontal overflow; print button invokes printing.
 - PDF: two A4 pages, selectable text confirmed with `pdftotext`; experience on page one, projects and skills on page two.
 - Merged to main and deployed on 2026-10-27: release `f6862e9`, Actions run `40547043950`. Public `/polymarket/` content and linked assets verified after propagation.
+
+## Education and teaching expansion
+
+Both education entries, full coursework, and AWS/Cisco certification names, issuers, years, and the available credential link are now shared from `cv.json`. Certification years are historical; current validity is not asserted. The ETI date range (2002 - 2019) is retained from the general CV and has not been independently verified. Carlos directly confirmed delivering MongoDB and Blender courses as an instructor; no teaching institutions, dates, audience counts, or syllabus details were supplied or invented.
+
+Rebuilt successfully and repeated Chromium desktop/mobile, print-button, and PDF checks. The regenerated PDF remains two A4 pages with selectable education, certification, and teaching text.

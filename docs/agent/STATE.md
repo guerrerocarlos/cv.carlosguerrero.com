@@ -31,3 +31,5 @@ Current product state:
 - Local build, browser and PDF checks passed. Merged and deployed to production on 2026-10-27; pushing main deploys automatically.
 
 - Production release: `f6862e9b40364be3d2d057f665826b0c098eeecd`, successful GitHub Actions run `40547043950`. Verified the public `/polymarket/` content and assets after a brief propagation delay.
+
+- Expanded the application CV with both education entries and coursework, historical AWS/Cisco certifications, and user-confirmed MongoDB/Blender course instruction. Education and certificates are shared from `cv.json`; the regenerated PDF remains two A4 pages.

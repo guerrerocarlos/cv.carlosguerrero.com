@@ -83,12 +83,17 @@
       "highlights": []
     }
   ],
-  "education": [
+  "languages": "English: fluent | Spanish: native",
+  "teaching": [
     {
-      "institution": "Universidad del Táchira",
-      "area": "Electronic Engineering",
-      "dates": "2002 - 2007"
+      "subject": "MongoDB",
+      "role": "Course Instructor",
+      "description": "Delivered MongoDB courses as an instructor."
+    },
+    {
+      "subject": "Blender",
+      "role": "Course Instructor",
+      "description": "Delivered Blender courses as an instructor."
     }
-  ],
-  "languages": "English: fluent | Spanish: native"
+  ]
 }

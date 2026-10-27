@@ -1,5 +1,5 @@
 ---
-import { basics } from "../../cv.json";
+import { basics, education, certificates } from "../../cv.json";
 import cv from "../data/polymarket.json";
 const github = basics.profiles.find(profile => profile.network === "GitHub");
 ---
@@ -65,9 +65,31 @@ const github = basics.profiles.find(profile => profile.network === "GitHub");
           <h2 id="skills">Technologies & engineering</h2>
           <p>{cv.skills.join(" · ")}</p>
         </section>
-        <section aria-labelledby="education">
-          <h2 id="education">Education & languages</h2>
-          {cv.education.map(item => <p><strong>{item.institution}</strong><br />{item.area} | {item.dates}</p>)}
+        <section aria-labelledby="education" class="education-section">
+          <h2 id="education">Education</h2>
+          {education.map(item => (
+            <article>
+              <div class="entry-heading"><h3>{item.institution}</h3><span class="dates">{item.startDate.slice(0, 4)} - {item.endDate.slice(0, 4)}</span></div>
+              <p class="role">{item.area}</p>
+              <p class="coursework">Coursework: {item.courses.join(" · ")}</p>
+            </article>
+          ))}
+        </section>
+        <section aria-labelledby="certificates">
+          <h2 id="certificates">Training & certifications</h2>
+          {certificates.map(item => (
+            <article>
+              <h3>{item.url ? <a href={item.url}>{item.name}</a> : item.name}</h3>
+              <p>{item.issuer} | {item.date.slice(0, 4)}</p>
+            </article>
+          ))}
+        </section>
+        <section aria-labelledby="teaching">
+          <h2 id="teaching">Teaching & instruction</h2>
+          <ul>{cv.teaching.map(item => <li>{item.description}</li>)}</ul>
+        </section>
+        <section aria-labelledby="languages">
+          <h2 id="languages">Languages</h2>
           <p>{cv.languages}</p>
         </section>
       </div>
@@ -129,6 +151,12 @@ const github = basics.profiles.find(profile => profile.network === "GitHub");
     section { margin-top: 14px; }
     article + article { margin-top: 14px; }
     article { break-inside: avoid; }
+    .second-sheet { font-size: 9pt; line-height: 1.3; }
+    .second-sheet article + article { margin-top: 10px; }
+    .second-sheet section { margin-top: 12px; }
+    .second-sheet h2 { margin-bottom: 6px; }
+    .second-sheet p { margin: 4px 0; }
+    #teaching, #languages { break-after: avoid; }
     p { margin: 5px 0; }
     li { margin: 4px 0; }
     a { color: inherit; }
