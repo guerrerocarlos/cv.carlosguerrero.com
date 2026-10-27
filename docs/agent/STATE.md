@@ -45,3 +45,5 @@ Current product state:
 - Inbox project link updated to https://omattic.com at Carlos's request; project copy is unchanged.
 
 - Added a compact small-personal-projects section for Compress Video, KeePassWeb, and Secure Channel, emphasizing browser-local processing and credential encryption.
+
+- Added Older projects: CacheP2P, Torrent TV (TorrenTV), and JS Bitcoin Miner, retaining all nine existing projects.

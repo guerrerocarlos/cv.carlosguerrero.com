@@ -62,3 +62,7 @@ Carlos clarified that the Inbox entry should describe the original InglesConLiza
 ## Small browser-based personal projects
 
 Carlos supplied the Compress Video URL and confirmed resize, cut, crop, and join functionality with no processing backend. KeePassWeb source (`guerrerocarlos/keepassweb`, index.html) documents local Web Crypto encryption and browser storage. Secure Channel source (`guerrerocarlos/secure-channel`, README.md, crypt.js, main.js) documents Web Crypto, encrypted links, browser-local keys and manual key disposal. Describe disposable key pairs, not private-key sharing or automatic expiry. These are implementation descriptions, not security-audit claims.
+
+## Older projects
+
+Added at Carlos's request, with descriptions checked against the supplied GitHub repositories and their READMEs: [CacheP2P](https://github.com/guerrerocarlos/CacheP2P) uses browser-based WebTorrent caching; [TorrenTV](https://github.com/guerrerocarlos/TorrenTV) is a node-webkit torrent-to-AirPlay desktop application; [JS Bitcoin Miner](https://github.com/guerrerocarlos/bitcoin-miner) is an educational JavaScript/Node.js BTC/BCH mining implementation. Avoid implying current device compatibility or practical mining performance. All nine earlier projects remain included.

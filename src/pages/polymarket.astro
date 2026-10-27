@@ -74,6 +74,12 @@ const github = basics.profiles.find(profile => profile.network === "GitHub");
             </article>
           ))}
         </section>
+        <section aria-labelledby="older-projects">
+          <h2 id="older-projects">Older projects</h2>
+          <ul>{cv.olderProjects.map(project => (
+            <li><strong><a href={project.url}>{project.name}</a></strong>: {project.description}</li>
+          ))}</ul>
+        </section>
         <section aria-labelledby="skills">
           <h2 id="skills">Technologies & engineering</h2>
           <p>{cv.skills.join(" · ")}</p>

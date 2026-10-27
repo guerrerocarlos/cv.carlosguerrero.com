@@ -138,5 +138,22 @@
       "url": "https://guerrerocarlos.github.io/secure-channel",
       "description": "Created a lightweight, frontend-only credential-sharing tool using Web Crypto and disposable key pairs. Exchanges encrypted links while keeping private keys in the recipient’s browser, avoiding plaintext credentials in workplace chat."
     }
+  ],
+  "olderProjects": [
+    {
+      "name": "CacheP2P",
+      "url": "https://github.com/guerrerocarlos/CacheP2P",
+      "description": "Browser-based JavaScript caching library using WebTorrent to share website content between visitors and reduce origin-server requests."
+    },
+    {
+      "name": "Torrent TV (TorrenTV)",
+      "url": "https://github.com/guerrerocarlos/TorrenTV",
+      "description": "Desktop torrent-streaming application built with Node.js and node-webkit, streaming video to Apple TV via AirPlay."
+    },
+    {
+      "name": "JS Bitcoin Miner",
+      "url": "https://github.com/guerrerocarlos/bitcoin-miner",
+      "description": "Educational JavaScript/Node.js miner demonstrating block hashing, difficulty targets, and nonce verification for Bitcoin and Bitcoin Cash."
+    }
   ]
 }
