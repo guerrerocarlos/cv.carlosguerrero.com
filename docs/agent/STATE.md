@@ -49,3 +49,5 @@ Current product state:
 - Added Older projects: CacheP2P, Torrent TV (TorrenTV), and JS Bitcoin Miner, retaining all nine existing projects.
 
 - Corrected ETI education to 1999-2002 in shared CV data, based on Carlos confirming the three years immediately before UNET (starting 2002). Applies to the general and tailored CVs.
+
+- Simplified the older-project title to TorrenTV, removing the duplicated name.

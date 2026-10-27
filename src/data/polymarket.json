@@ -146,7 +146,7 @@
       "description": "Browser-based JavaScript caching library using WebTorrent to share website content between visitors and reduce origin-server requests."
     },
     {
-      "name": "Torrent TV (TorrenTV)",
+      "name": "TorrenTV",
       "url": "https://github.com/guerrerocarlos/TorrenTV",
       "description": "Desktop torrent-streaming application built with Node.js and node-webkit, streaming video to Apple TV via AirPlay."
     },
