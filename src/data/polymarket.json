@@ -49,6 +49,7 @@
       "highlights": [
         "Created automated per-branch environments so teams could develop and validate changes independently.",
         "Migrated frontend hosting to AWS CloudFront, supporting CDN-level A/B testing and performance tuning.",
+        "Built and maintained frontend-related microservices for serverless infrastructure, including a progress bar still used in marketing emails.",
         "Reworked backend delivery from Jenkins and Kubernetes to GitHub Actions and AWS Fargate, with infrastructure managed through Terraform and AWS CDK."
       ]
     }

@@ -42,3 +42,7 @@ SEOKeywordExplorer was also requested for this revision. Its entry describes sou
 ## Featured InglésConLiza project
 
 Carlos requested InglésConLiza as a featured personal project built for his wife and confirmed its original Inbox, supporting services, Google Drive content management, and Cloudflare Containers/FFmpeg video processing. Repository state and the FFmpeg Containers dependency corroborate the architecture. Name the six supported channels rather than claiming integration with every social network. Campaign integration remains planned, not shipped. The expanded PDF now uses three pages to retain readable project detail and the full education/training section.
+
+## Masterworks serverless frontend services
+
+Carlos confirmed in October 2026 that he built and maintained frontend-related microservices for serverless infrastructure, including a progress bar still used in marketing emails. This continued use is user-reported; no employer systems were accessed to verify it.
