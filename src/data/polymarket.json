@@ -121,5 +121,22 @@
       "role": "Course Instructor",
       "description": "Delivered Blender courses as an instructor."
     }
+  ],
+  "smallProjects": [
+    {
+      "name": "Compress Video",
+      "url": "https://www.omattic.com/compress-video",
+      "description": "Built a browser-based video tool for resizing, trimming, cropping, and joining videos, with processing performed locally and no backend required."
+    },
+    {
+      "name": "KeePassWeb",
+      "url": "https://keepassweb.com",
+      "description": "Built a frontend password-encryption tool using browser-native cryptography, allowing users to encrypt and decrypt credentials locally without a third-party password-storage service."
+    },
+    {
+      "name": "Secure Channel",
+      "url": "https://guerrerocarlos.github.io/secure-channel",
+      "description": "Created a lightweight, frontend-only credential-sharing tool using Web Crypto and disposable key pairs. Exchanges encrypted links while keeping private keys in the recipient’s browser, avoiding plaintext credentials in workplace chat."
+    }
   ]
 }

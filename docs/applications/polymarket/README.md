@@ -58,3 +58,7 @@ Reviewed local manifests and source on 2026-10-27. Added libraries supported by 
 - React Hook Form, Recharts, and several other packages appear in manifests or scaffold components, but were not added as skills without stronger application-use evidence.
 
 Carlos clarified that the Inbox entry should describe the original InglesConLiza project, not the Omattic featured product. Replaced the simulated Omattic showcase link with the support console and moved planned campaign integration into Inbox. The earlier selection notes are historical and superseded by this clarification.
+
+## Small browser-based personal projects
+
+Carlos supplied the Compress Video URL and confirmed resize, cut, crop, and join functionality with no processing backend. KeePassWeb source (`guerrerocarlos/keepassweb`, index.html) documents local Web Crypto encryption and browser storage. Secure Channel source (`guerrerocarlos/secure-channel`, README.md, crypt.js, main.js) documents Web Crypto, encrypted links, browser-local keys and manual key disposal. Describe disposable key pairs, not private-key sharing or automatic expiry. These are implementation descriptions, not security-audit claims.

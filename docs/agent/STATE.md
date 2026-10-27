@@ -43,3 +43,5 @@ Current product state:
 - Reviewed project manifests and source imports to expand React ecosystem skills: TanStack Query/Router, React Router, Radix UI/shadcn, Tailwind CSS, Framer Motion, and Vite. Inbox now represents the original InglesConLiza communications project, linking to its support console; planned campaign integration belongs to Inbox, not an Omattic product showcase.
 
 - Inbox project link updated to https://omattic.com at Carlos's request; project copy is unchanged.
+
+- Added a compact small-personal-projects section for Compress Video, KeePassWeb, and Secure Channel, emphasizing browser-local processing and credential encryption.
