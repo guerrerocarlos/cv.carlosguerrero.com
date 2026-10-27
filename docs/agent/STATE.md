@@ -33,3 +33,5 @@ Current product state:
 - Production release: `f6862e9b40364be3d2d057f665826b0c098eeecd`, successful GitHub Actions run `40547043950`. Verified the public `/polymarket/` content and assets after a brief propagation delay.
 
 - Expanded the application CV with both education entries and coursework, historical AWS/Cisco certifications, and user-confirmed MongoDB/Blender course instruction. Education and certificates are shared from `cv.json`; the regenerated PDF remains two A4 pages.
+
+- Recent-project selection is documented in `docs/applications/polymarket/project-selection.md`. Recommended next revision: keep W7S/Democrachain, replace CacheP2P with Invoices Templates, and consider Inbox after ownership confirmation. The published CV is unchanged by the review.
