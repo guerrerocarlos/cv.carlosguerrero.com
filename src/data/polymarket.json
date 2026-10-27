@@ -83,7 +83,7 @@
     {
       "name": "Inbox",
       "role": "Creator & Developer",
-      "url": "https://support.inglesconliza.com",
+      "url": "https://omattic.com",
       "description": "Created the original React and TypeScript communications platform for InglésConLiza, unifying channels, real-time conversations, and AI-assisted workflows. Used TanStack Query for conversation caching and prefetching, with TanStack Router for navigation. Campaign integration is planned.",
       "highlights": []
     },

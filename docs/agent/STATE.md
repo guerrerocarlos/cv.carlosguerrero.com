@@ -41,3 +41,5 @@ Current product state:
 - Expanded the tailored Masterworks entry with user-confirmed ownership of frontend-related serverless microservices, including a progress bar still used in marketing emails as of October 2026.
 
 - Reviewed project manifests and source imports to expand React ecosystem skills: TanStack Query/Router, React Router, Radix UI/shadcn, Tailwind CSS, Framer Motion, and Vite. Inbox now represents the original InglesConLiza communications project, linking to its support console; planned campaign integration belongs to Inbox, not an Omattic product showcase.
+
+- Inbox project link updated to https://omattic.com at Carlos's request; project copy is unchanged.
