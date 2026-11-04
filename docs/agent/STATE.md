@@ -51,3 +51,7 @@ Current product state:
 - Corrected ETI education to 1999-2002 in shared CV data, based on Carlos confirming the three years immediately before UNET (starting 2002). Applies to the general and tailored CVs.
 
 - Simplified the older-project title to TorrenTV, removing the duplicated name.
+
+## 2026-11-04: W7S in the general CV
+
+- Added W7S.io first in the main CV personal projects, linking to https://w7s.io/ and emphasizing full-stack deployment infrastructure and end-to-end ownership. The tailored Polymarket CV already includes W7S.

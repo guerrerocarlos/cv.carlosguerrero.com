@@ -351,6 +351,17 @@
   ],
   "projects": [
     {
+      "name": "W7S.io",
+      "isActive": true,
+      "description": "Created a platform for deploying full-stack applications from GitHub, bringing hosting, backends, databases, queues, and workflows together so teams can launch products without managing the underlying infrastructure.",
+      "highlights": [
+        "End-to-end platform design and development",
+        "GitHub-native deployments with integrated authentication and usage controls",
+        "React and TypeScript dashboard interfaces"
+      ],
+      "url": "https://w7s.io/"
+    },
+    {
       "name": "KeePassWeb",
       "isActive": true,
       "description": "Simple tool to encrypt important secrets/passwords without relying on any third party. Allows securing the data using.",
