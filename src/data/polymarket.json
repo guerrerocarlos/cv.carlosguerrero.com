@@ -68,8 +68,9 @@
       "url": "https://www.inglesconliza.com",
       "description": "Built an integrated language-learning platform for my wife, connecting the learner experience, customer communications, content operations, and media delivery through a microservices architecture.",
       "highlights": [
+        "Built the learner PWA with React Native, Expo, React Native Web, and TypeScript, including lessons, media playback, ebooks, progress tracking, and certificates.",
         "Created the original Inbox implementation, bringing Instagram, Messenger, WhatsApp, Telegram, email, and in-app chat into a shared customer communications workflow.",
-        "Developed supporting authentication, accounts, mailer, and email-template services, plus a content manager integrated with Google Drive.",
+        "Developed authentication, accounts, billing integrations, queued mailer and email-template services, plus a custom Drive content manager with Google Drive imports, uploads, document editing, and version history.",
         "Built video processing with Cloudflare Containers and FFmpeg."
       ]
     },

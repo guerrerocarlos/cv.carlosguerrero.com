@@ -60,3 +60,5 @@ Current product state:
 
 - Moved W7S.io from the main CV personal projects into the first Recent Experience entry: Creator & Developer, 2026-Present. Start year is user-confirmed; no start month is inferred.
 - Experience rendering preserves year-only start dates without timezone conversion.
+
+- Added InglesConLiza first in the general CV personal projects with the React Native/Expo PWA, Drive content system, Containers/FFmpeg processing, authentication/accounts/billing, mailer/templates, and original Inbox. Expanded the tailored entry with the verified frontend stack and Drive capabilities.

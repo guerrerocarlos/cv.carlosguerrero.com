@@ -74,3 +74,7 @@ Carlos confirmed ETI lasted the three years before UNET. With UNET starting in 2
 ## Secure Channel update, 2026-11-04
 
 Reviewed upstream commit `4574690`, README and agent-guide.md. Updated both CV entries for static agent instructions, the dependency-free offline Node.js sender, punctuation-resistant recipient links, and compatibility with existing keys. Descriptions do not imply sender authentication, automatic expiry, or a cryptographic upgrade; the upstream guide documents legacy format limitations.
+
+## InglesConLiza expanded scope, 2026-11-04
+
+User requested the full platform in the general CV. Checked app package.json and app/_layout.tsx for React Native/Expo/React Native Web, and app state for installable PWA, lessons, ebooks, certificates and billing. Drive state confirms uploads, Google Drive imports, document editing and version history; Mailer state confirms queued sending and separate template rendering. Existing user-confirmed FFmpeg/Containers and Inbox ownership is retained. The PWA wording does not imply a published native app-store release.
