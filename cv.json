@@ -45,6 +45,30 @@
   },
   "work": [
     {
+      "name": "W7S.io",
+      "position": "Creator & Developer",
+      "location": "",
+      "location_type": "",
+      "url": "https://w7s.io/",
+      "startDate": "2026",
+      "endDate": null,
+      "summary": "Created a platform for deploying full-stack applications from GitHub, bringing hosting, backends, databases, queues, and workflows together so teams can launch products without managing the underlying infrastructure.",
+      "responsibilities": [
+        "Designed and built the platform end to end, bringing application hosting, backends, databases, queues, and workflows into a shared deployment system.",
+        "Developed GitHub-native deployment workflows, integrated authentication and usage controls, and React/TypeScript dashboard interfaces."
+      ],
+      "achievements": [
+        "Enabled teams to launch full-stack applications without managing the underlying infrastructure."
+      ],
+      "skills": [
+        "React",
+        "TypeScript",
+        "GitHub Actions",
+        "Cloudflare Workers",
+        "Distributed systems"
+      ]
+    },
+    {
       "name": "Anaconda",
       "position": "Applied AI Engineer",
       "location": "Remote",
@@ -350,17 +374,6 @@
     }
   ],
   "projects": [
-    {
-      "name": "W7S.io",
-      "isActive": true,
-      "description": "Created a platform for deploying full-stack applications from GitHub, bringing hosting, backends, databases, queues, and workflows together so teams can launch products without managing the underlying infrastructure.",
-      "highlights": [
-        "End-to-end platform design and development",
-        "GitHub-native deployments with integrated authentication and usage controls",
-        "React and TypeScript dashboard interfaces"
-      ],
-      "url": "https://w7s.io/"
-    },
     {
       "name": "KeePassWeb",
       "isActive": true,
