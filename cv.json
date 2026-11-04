@@ -45,6 +45,32 @@
   },
   "work": [
     {
+      "name": "InglésConLiza",
+      "position": "Creator & Developer",
+      "location": "",
+      "location_type": "",
+      "url": "https://www.inglesconliza.com",
+      "startDate": "2026",
+      "endDate": null,
+      "summary": "Created the complete language-learning platform for my wife, connecting the learner experience, customer communications, content management, and media delivery through independently deployed microservices.",
+      "responsibilities": [
+        "Built the learner-facing PWA with React Native, Expo, React Native Web, and TypeScript, including lessons, media playback, ebooks, progress tracking, and certificates.",
+        "Created a custom Drive system and content manager with Google Drive imports, file and folder uploads, document editing, and version history.",
+        "Built video-processing pipelines using Cloudflare Containers and FFmpeg, integrated with content storage and delivery.",
+        "Developed authentication, accounts, subscription and billing integrations, and supporting APIs.",
+        "Built a queued mailer and reusable email-template service for transactional and course communications.",
+        "Created the original Inbox for unified social messaging, email, and in-app chat, with AI-assisted customer workflows."
+      ],
+      "skills": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Cloudflare Workers",
+        "Cloudflare Containers",
+        "FFmpeg"
+      ]
+    },
+    {
       "name": "W7S.io",
       "position": "Creator & Developer",
       "location": "",
@@ -374,20 +400,6 @@
     }
   ],
   "projects": [
-    {
-      "name": "InglésConLiza",
-      "isActive": true,
-      "description": "Created the complete language-learning platform for my wife, connecting the learner experience, customer communications, content management, and media delivery through independently deployed microservices.",
-      "highlights": [
-        "Built the learner-facing PWA with React Native, Expo, React Native Web, and TypeScript, including lessons, media playback, ebooks, progress tracking, and certificates.",
-        "Created a custom Drive system and content manager with Google Drive imports, file and folder uploads, document editing, and version history.",
-        "Built video-processing pipelines using Cloudflare Containers and FFmpeg, integrated with content storage and delivery.",
-        "Developed authentication, accounts, subscription and billing integrations, and supporting APIs.",
-        "Built a queued mailer and reusable email-template service for transactional and course communications.",
-        "Created the original Inbox for unified social messaging, email, and in-app chat, with AI-assisted customer workflows."
-      ],
-      "url": "https://www.inglesconliza.com"
-    },
     {
       "name": "KeePassWeb",
       "isActive": true,

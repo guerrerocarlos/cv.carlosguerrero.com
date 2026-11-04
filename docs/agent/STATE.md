@@ -62,3 +62,5 @@ Current product state:
 - Experience rendering preserves year-only start dates without timezone conversion.
 
 - Added InglesConLiza first in the general CV personal projects with the React Native/Expo PWA, Drive content system, Containers/FFmpeg processing, authentication/accounts/billing, mailer/templates, and original Inbox. Expanded the tailored entry with the verified frontend stack and Drive capabilities.
+
+- Moved InglesConLiza into the main CV Recent Experience as Creator & Developer, 2026-Present, preserving the full platform details and removing its personal-project duplicate.
