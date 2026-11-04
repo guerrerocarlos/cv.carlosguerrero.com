@@ -55,3 +55,5 @@ Current product state:
 ## 2026-11-04: W7S in the general CV
 
 - Added W7S.io first in the main CV personal projects, linking to https://w7s.io/ and emphasizing full-stack deployment infrastructure and end-to-end ownership. The tailored Polymarket CV already includes W7S.
+
+- Updated Secure Channel in both CV versions for AI-agent workflows, an offline Node.js sender, and copy-friendly recipient links, verified against upstream commit 4574690. Regenerated the tailored PDF.

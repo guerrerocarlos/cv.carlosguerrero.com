@@ -136,7 +136,7 @@
     {
       "name": "Secure Channel",
       "url": "https://guerrerocarlos.github.io/secure-channel",
-      "description": "Created a lightweight, frontend-only credential-sharing tool using Web Crypto and disposable key pairs. Exchanges encrypted links while keeping private keys in the recipient’s browser, avoiding plaintext credentials in workplace chat."
+      "description": "Built a backend-free credential-sharing tool for people and AI agents using Web Crypto and browser-local private keys. Added a dependency-free offline Node.js sender, agent-readable instructions, and copy-friendly recipient links that preserve compatibility with existing keys."
     }
   ],
   "olderProjects": [

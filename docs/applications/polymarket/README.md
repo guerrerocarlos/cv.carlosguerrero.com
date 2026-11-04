@@ -70,3 +70,7 @@ Added at Carlos's request, with descriptions checked against the supplied GitHub
 ## ETI date correction
 
 Carlos confirmed ETI lasted the three years before UNET. With UNET starting in 2002, ETI now displays 1999-2002 in shared education data. January dates are year-only storage placeholders, not confirmed enrollment days.
+
+## Secure Channel update, 2026-11-04
+
+Reviewed upstream commit `4574690`, README and agent-guide.md. Updated both CV entries for static agent instructions, the dependency-free offline Node.js sender, punctuation-resistant recipient links, and compatibility with existing keys. Descriptions do not imply sender authentication, automatic expiry, or a cryptographic upgrade; the upstream guide documents legacy format limitations.

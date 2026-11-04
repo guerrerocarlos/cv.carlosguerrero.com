@@ -374,10 +374,11 @@
     {
       "name": "Secrets secure-channel",
       "isActive": true,
-      "description": "Cryptographically secure channel for exchanging secrets between two parties.",
+      "description": "Created a backend-free tool for sharing encrypted credentials between people and AI agents, keeping recipient private keys in the browser.",
       "highlights": [
-        "Built with native WebCrypto API",
-        "End-to-end encryption"
+        "Browser-native Web Crypto and encrypted reply links",
+        "Dependency-free Node.js sender with local encryption and no network requests",
+        "Agent-readable instructions and copy-friendly recipient links with legacy compatibility"
       ],
       "url": "https://guerrerocarlos.github.io/secure-channel/"
     },
