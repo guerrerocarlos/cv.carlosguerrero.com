@@ -19,7 +19,6 @@ Push to `main`. GitHub Actions builds the Astro site, assembles `.w7s-deploy/`, 
 The deploy artifact includes:
 
 - `dist`
-- `CNAME`
 - `w7s.json`
 
 ## Domain
@@ -72,4 +71,4 @@ curl -sSI https://cv.carlosguerrero.com/polymarket/
 curl -fsS https://carlosguerrero.com/cv
 ```
 
-Gateway code/config changes require deploy:gateway; ordinary content changes continue through W7S on main. Verify CV CSS, /cv/polymarket/, /cv/print-cards and /cv/api/card.pdf after changes. The old hostname redirects to the same path under /cv; the apex homepage still redirects to www. Do not point the gateway upstream at the old public hostname, which would create a redirect loop.
+The historical CNAME file is deliberately excluded from W7S artifacts after the one-time transfer of the old hostname route from w7s-io to this gateway. Gateway code/config changes require deploy:gateway; ordinary content changes continue through W7S on main. Verify CV CSS, /cv/polymarket/, /cv/print-cards and /cv/api/card.pdf after changes. The old hostname redirects to the same path under /cv; the apex homepage still redirects to www. Do not point the gateway upstream at the old public hostname, which would create a redirect loop.
