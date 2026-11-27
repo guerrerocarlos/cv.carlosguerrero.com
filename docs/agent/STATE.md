@@ -68,8 +68,8 @@ Current product state:
 ## 2026-11-27: CV path migration
 
 - Canonical CV address: https://carlosguerrero.com/cv. Astro base is /cv; CSS, icons, card endpoints, QR URLs and metadata use the new location.
-- W7S remains the content origin at https://guerrerocarlos.w7s.cloud/cv.carlosguerrero.com/. The legacy CNAME file is not included in deployment artifacts, so W7S cannot re-register the retired hostname route; public requests to it are handled by the dedicated gateway.
-- carlosguerrero-cv-gateway owns only /cv and /cv/* on apex/www, plus cv.carlosguerrero.com/*. It proxies the apex mount, redirects www CV paths and the old hostname permanently, and preserves query strings and nested routes. Other apex shortcuts and the main www site remain owned by their existing Workers.
+- W7S remains the content origin at https://guerrerocarlos.w7s.cloud/cv.carlosguerrero.com/. The legacy root CNAME file is removed to prevent automatic inclusion by the W7S action, so W7S cannot re-register the retired hostname route; public requests to it are handled by the dedicated gateway.
+- carlosguerrero-cv-gateway owns /cv* on apex/www with strict CV path checks and main-site fallback, plus cv.carlosguerrero.com/*. It proxies the apex mount, redirects www CV paths and the old hostname permanently, and preserves query strings and nested routes. Other apex shortcuts and the main www site remain owned by their existing Workers.
 - Gateway health at /cv/health reports branch, commitHash and deployedAt.
 - Browser validation found the same pre-existing hotkeypad invalid-shortcut error on the old production site and local mounted build; tracked separately from migration.
 - Cloudflare route patterns use /cv* so query strings on the bare /cv path are intercepted. The handler strictly checks /cv or /cv/; other prefix matches retain apex-to-www or main-site proxy behavior.

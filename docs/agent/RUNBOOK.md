@@ -23,15 +23,9 @@ The deploy artifact includes:
 
 ## Domain
 
-The repo declares:
+The public CV is served at https://carlosguerrero.com/cv. The gateway redirects the retired hostname. Do not restore a root CNAME file: the W7S action automatically copies it into deployment artifacts and reclaims its route.
 
-```text
-cv.carlosguerrero.com
-```
-
-in `CNAME`.
-
-After deployment, verify the W7S path while DNS is being moved:
+After deployment, verify the W7S content origin:
 
 ```sh
 curl -fsS -D - https://guerrerocarlos.w7s.cloud/cv.carlosguerrero.com/ -o /tmp/cv-w7s-home.html
@@ -71,4 +65,4 @@ curl -sSI https://cv.carlosguerrero.com/polymarket/
 curl -fsS https://carlosguerrero.com/cv
 ```
 
-The historical CNAME file is deliberately excluded from W7S artifacts after the one-time transfer of the old hostname route from w7s-io to this gateway. Gateway code/config changes require deploy:gateway; ordinary content changes continue through W7S on main. Verify CV CSS, /cv/polymarket/, /cv/print-cards and /cv/api/card.pdf after changes. The old hostname redirects to the same path under /cv; the apex homepage still redirects to www. Do not point the gateway upstream at the old public hostname, which would create a redirect loop.
+The historical CNAME file is removed from the repository after the one-time transfer of the old hostname route from w7s-io to this gateway. Gateway code/config changes require deploy:gateway; ordinary content changes continue through W7S on main. Verify CV CSS, /cv/polymarket/, /cv/print-cards and /cv/api/card.pdf after changes. The old hostname redirects to the same path under /cv; the apex homepage still redirects to www. Do not point the gateway upstream at the old public hostname, which would create a redirect loop.
