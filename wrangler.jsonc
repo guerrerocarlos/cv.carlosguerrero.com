@@ -5,11 +5,20 @@
   "compatibility_date": "2026-11-27",
   "workers_dev": true,
   "routes": [
-    { "pattern": "carlosguerrero.com/cv", "zone_name": "carlosguerrero.com" },
-    { "pattern": "carlosguerrero.com/cv/*", "zone_name": "carlosguerrero.com" },
-    { "pattern": "www.carlosguerrero.com/cv", "zone_name": "carlosguerrero.com" },
-    { "pattern": "www.carlosguerrero.com/cv/*", "zone_name": "carlosguerrero.com" },
-    { "pattern": "cv.carlosguerrero.com/*", "zone_name": "carlosguerrero.com" }
+    {
+      "pattern": "carlosguerrero.com/cv*",
+      "zone_name": "carlosguerrero.com"
+    },
+    {
+      "pattern": "www.carlosguerrero.com/cv*",
+      "zone_name": "carlosguerrero.com"
+    },
+    {
+      "pattern": "cv.carlosguerrero.com/*",
+      "zone_name": "carlosguerrero.com"
+    }
   ],
-  "observability": { "enabled": true }
+  "observability": {
+    "enabled": true
+  }
 }

@@ -31,5 +31,5 @@ test('health reports deployment metadata; unrelated paths are not proxied', asyn
   const env = { BRANCH: 'main', COMMIT_HASH: '1234', DEPLOYED_AT: '2026-11-27T00:00:00Z' };
   const response = await gateway.fetch(new Request('https://carlosguerrero.com/cv/health'), env);
   assert.deepEqual(await response.json(), { branch: env.BRANCH, commitHash: env.COMMIT_HASH, deployedAt: env.DEPLOYED_AT });
-  assert.equal((await gateway.fetch(new Request('https://carlosguerrero.com/cv-other'), env)).status, 404);
+  assert.equal((await gateway.fetch(new Request('https://carlosguerrero.com/cv-other?q=1'), env)).headers.get('Location'), 'https://www.carlosguerrero.com/cv-other?q=1');
 });

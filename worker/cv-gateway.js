@@ -20,7 +20,20 @@ export default {
     if (url.pathname === '/health' || url.pathname === '/cv/health') {
       return Response.json({ branch: env.BRANCH, commitHash: env.COMMIT_HASH, deployedAt: env.DEPLOYED_AT }, { headers: { 'Cache-Control': 'no-store' } });
     }
-    if (!mounted) return new Response('Not found', { status: 404 });
+    if (!mounted) {
+      // Route wildcards also match /cv-other; preserve the main site's behavior.
+      if (url.hostname === 'carlosguerrero.com') {
+        url.hostname = 'www.carlosguerrero.com';
+        url.protocol = 'https:';
+        return Response.redirect(url.href, 301);
+      }
+      if (url.hostname === 'www.carlosguerrero.com') {
+        url.hostname = 'guerrerocarlos.w7s.cloud';
+        url.pathname = '/carlosguerrero.com-app-carlosguerrero-com-0ml60zk' + url.pathname;
+        return fetch(new Request(url, request));
+      }
+      return new Response('Not found', { status: 404 });
+    }
     if (url.protocol !== 'https:' || url.pathname === '/cv/') {
       url.protocol = 'https:';
       if (url.pathname === '/cv/') url.pathname = '/cv';

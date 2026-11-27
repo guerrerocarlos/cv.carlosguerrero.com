@@ -11,3 +11,4 @@ Keep the Polymarket application at `/polymarket/` with its own content data and 
 Lead with organizational impact and reusable systems while retaining concrete React/TypeScript experience. The rPotential title is a user-approved descriptive title, not a verified HR title. Present Democrachain as an independent working prototype; do not imply production adoption.
 
 - 2026-11-27: Retain independent W7S content deployment and mount it under the apex /cv through a dedicated route Worker. Permanent redirects preserve old links and queries. Keeping route ownership in the CV repo avoids coupling CV releases to the marketing site's build.
+- Live verification showed exact /cv routes do not match /cv?query. Use /cv* patterns with strict path checks and main-site fallback for non-CV prefix matches.

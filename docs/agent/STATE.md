@@ -72,3 +72,4 @@ Current product state:
 - carlosguerrero-cv-gateway owns only /cv and /cv/* on apex/www, plus cv.carlosguerrero.com/*. It proxies the apex mount, redirects www CV paths and the old hostname permanently, and preserves query strings and nested routes. Other apex shortcuts and the main www site remain owned by their existing Workers.
 - Gateway health at /cv/health reports branch, commitHash and deployedAt.
 - Browser validation found the same pre-existing hotkeypad invalid-shortcut error on the old production site and local mounted build; tracked separately from migration.
+- Cloudflare route patterns use /cv* so query strings on the bare /cv path are intercepted. The handler strictly checks /cv or /cv/; other prefix matches retain apex-to-www or main-site proxy behavior.
