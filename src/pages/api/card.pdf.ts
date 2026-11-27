@@ -38,7 +38,7 @@ export const GET: APIRoute = async () => {
     email: cvData?.basics?.email || 'hi@carlosguerrero.com',
     phone: cvData?.basics?.phone || '+595 985 690 905',
     linkedin: (cvData?.basics?.profiles?.find((p: any) => p.network === 'LinkedIn')?.url) || 'linkedin.com/in/carlosguerrero',
-    website: cvData?.basics?.cvUrl || 'cv.carlosguerrero.com',
+    website: cvData?.basics?.cvUrl || 'carlosguerrero.com/cv',
     qrUrl: 'https://contact.carlosguerrero.com/',
     widthMm: 88.9,
     heightMm: 50.8,

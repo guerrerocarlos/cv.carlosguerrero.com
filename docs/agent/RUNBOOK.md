@@ -51,9 +51,25 @@ _w7s.carlosguerrero.com=guerrerocarlos/cv.carlosguerrero.com
 
 1. Edit `src/data/polymarket.json` and, if needed, `src/pages/polymarket.astro`.
 2. Run `corepack pnpm build`, then `corepack pnpm preview --host 127.0.0.1`.
-3. Open `http://127.0.0.1:4321/polymarket/`, check desktop and narrow mobile layouts, and use Print / Save PDF.
+3. Open `http://127.0.0.1:4321/cv/polymarket/`, check desktop and narrow mobile layouts, and use Print / Save PDF.
 4. Use A4, 100% scale, CSS margins, and disable browser headers/footers. Save the reviewed output to `docs/applications/polymarket/carlos-guerrero.pdf`. Regenerate it whenever application copy changes.
 5. Confirm three pages and selectable text using `pdfinfo` and `pdftotext -layout`. Check that experience, projects, skills, contact details, and links survive printing.
 6. Commit and push a review branch. Do not merge to main until publication is authorized.
 
 The 2026-10-27 PDF was generated with Chromium 141 using Playwright `page.pdf({ preferCSSPageSize: true, printBackground: true })`.
+
+## CV gateway deployment
+
+The W7S workflow publishes CV content. The dedicated Cloudflare gateway is deployed separately with the authenticated local Wrangler session after verification and commit:
+
+```sh
+corepack pnpm test:gateway
+corepack pnpm build
+corepack pnpm exec wrangler deploy --dry-run
+corepack pnpm deploy:gateway
+curl -fsS https://carlosguerrero.com/cv/health
+curl -sSI https://cv.carlosguerrero.com/polymarket/
+curl -fsS https://carlosguerrero.com/cv
+```
+
+Gateway code/config changes require deploy:gateway; ordinary content changes continue through W7S on main. Verify CV CSS, /cv/polymarket/, /cv/print-cards and /cv/api/card.pdf after changes. The old hostname redirects to the same path under /cv; the apex homepage still redirects to www. Do not point the gateway upstream at the old public hostname, which would create a redirect loop.

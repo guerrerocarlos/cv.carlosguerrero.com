@@ -45,7 +45,7 @@ export const GET: APIRoute = async () => {
   const [first, ...rest] = escapeXML(defaults.name).split(' ');
   const last = rest.join(' ');
   const startY = 210;
-  const qrUrl = 'https://cv.carlosguerrero.com/';
+  const qrUrl = 'https://carlosguerrero.com/cv';
   const qrSize = 250;
   const qrDataUrl = await QRCode.toDataURL(qrUrl, {
     margin: 0,

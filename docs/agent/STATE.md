@@ -64,3 +64,11 @@ Current product state:
 - Added InglesConLiza first in the general CV personal projects with the React Native/Expo PWA, Drive content system, Containers/FFmpeg processing, authentication/accounts/billing, mailer/templates, and original Inbox. Expanded the tailored entry with the verified frontend stack and Drive capabilities.
 
 - Moved InglesConLiza into the main CV Recent Experience as Creator & Developer, 2026-Present, preserving the full platform details and removing its personal-project duplicate.
+
+## 2026-11-27: CV path migration
+
+- Canonical CV address: https://carlosguerrero.com/cv. Astro base is /cv; CSS, icons, card endpoints, QR URLs and metadata use the new location.
+- W7S remains the content origin at https://guerrerocarlos.w7s.cloud/cv.carlosguerrero.com/. CNAME is retained for origin registration; public requests to the old hostname are intercepted by the dedicated gateway.
+- carlosguerrero-cv-gateway owns only /cv and /cv/* on apex/www, plus cv.carlosguerrero.com/*. It proxies the apex mount, redirects www CV paths and the old hostname permanently, and preserves query strings and nested routes. Other apex shortcuts and the main www site remain owned by their existing Workers.
+- Gateway health at /cv/health reports branch, commitHash and deployedAt.
+- Browser validation found the same pre-existing hotkeypad invalid-shortcut error on the old production site and local mounted build; tracked separately from migration.

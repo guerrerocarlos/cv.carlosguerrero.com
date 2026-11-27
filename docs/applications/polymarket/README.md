@@ -78,3 +78,7 @@ Reviewed upstream commit `4574690`, README and agent-guide.md. Updated both CV e
 ## InglesConLiza expanded scope, 2026-11-04
 
 User requested the full platform in the general CV. Checked app package.json and app/_layout.tsx for React Native/Expo/React Native Web, and app state for installable PWA, lessons, ebooks, certificates and billing. Drive state confirms uploads, Google Drive imports, document editing and version history; Mailer state confirms queued sending and separate template rendering. Existing user-confirmed FFmpeg/Containers and Inbox ownership is retained. The PWA wording does not imply a published native app-store release.
+
+## 2026-11-27 URL migration
+
+The tailored CV is now published at https://carlosguerrero.com/cv/polymarket/. Its General CV link points to /cv. Old cv.carlosguerrero.com links redirect to the corresponding new paths. The PDF was regenerated with the updated link.

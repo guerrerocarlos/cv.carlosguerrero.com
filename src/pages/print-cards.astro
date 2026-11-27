@@ -56,8 +56,8 @@
         const cols = 2, rows = 5;
         // Fetch SVGs and show previews
         const [frontSVG, backSVG] = await Promise.all([
-          fetchSVG('/api/card-front.svg'),
-          fetchSVG('/api/card-back.svg')
+          fetchSVG('/cv/api/card-front.svg'),
+          fetchSVG('/cv/api/card-back.svg')
         ]);
         const frontImg = document.getElementById('front-img') as HTMLImageElement | null;
         if (frontImg) {
