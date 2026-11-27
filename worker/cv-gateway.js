@@ -44,6 +44,10 @@ export default {
     target.search = url.search;
     const upstream = await fetch(new Request(target, request), { redirect: 'manual' });
     const response = new Response(upstream.body, upstream);
+    // W7S stores generated PDFs with a generic binary MIME type.
+    if (response.ok && url.pathname.endsWith('.pdf') && response.headers.get('Content-Type')?.startsWith('application/octet-stream')) {
+      response.headers.set('Content-Type', 'application/pdf');
+    }
     const location = response.headers.get('Location');
     if (location) {
       const resolved = new URL(location, target);

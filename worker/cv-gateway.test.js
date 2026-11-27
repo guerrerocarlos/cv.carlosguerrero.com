@@ -33,3 +33,10 @@ test('health reports deployment metadata; unrelated paths are not proxied', asyn
   assert.deepEqual(await response.json(), { branch: env.BRANCH, commitHash: env.COMMIT_HASH, deployedAt: env.DEPLOYED_AT });
   assert.equal((await gateway.fetch(new Request('https://carlosguerrero.com/cv-other?q=1'), env)).headers.get('Location'), 'https://www.carlosguerrero.com/cv-other?q=1');
 });
+
+test('generated PDF keeps its body and uses a browser-readable MIME type', async (t) => {
+  t.mock.method(globalThis, 'fetch', async () => new Response('%PDF-1.7', { headers: { 'Content-Type': 'application/octet-stream' } }));
+  const response = await gateway.fetch(new Request('https://carlosguerrero.com/cv/api/card.pdf'), {});
+  assert.equal(response.headers.get('Content-Type'), 'application/pdf');
+  assert.equal(await response.text(), '%PDF-1.7');
+});

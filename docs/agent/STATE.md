@@ -73,3 +73,4 @@ Current product state:
 - Gateway health at /cv/health reports branch, commitHash and deployedAt.
 - Browser validation found the same pre-existing hotkeypad invalid-shortcut error on the old production site and local mounted build; tracked separately from migration.
 - Cloudflare route patterns use /cv* so query strings on the bare /cv path are intercepted. The handler strictly checks /cv or /cv/; other prefix matches retain apex-to-www or main-site proxy behavior.
+- Gateway normalizes generic binary PDF responses from W7S to application/pdf for browser viewing.
